@@ -2,18 +2,28 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>喻智勇-前端工程师-13606640872</title>
-<link rel="icon" href="favicon.ico">
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext'
-  rel='stylesheet' type='text/css' />
-<link href='index.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>喻智勇-前端工程师-13606640872</title><style type='text/css'>
+
+@font-face {
+  font-family: 'pingfang';
+  src: url('./font/PingFang SC Regular.eot');
+  src:
+    url('./font/PingFang SC Regular.eot?#font-spider') format('embedded-opentype'),
+    url('./font/PingFang SC Regular.woff') format('woff'),
+    url('./font/PingFang SC Regular.ttf') format('truetype'),
+    url('./font/PingFang SC Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -26,15 +36,16 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
-#write li > figure:first-child { margin-top: -20px; }
+#write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -50,7 +61,7 @@ sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); 
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px !important; }
+figure > table { margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -85,23 +96,24 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0px; }
+  .is-mac table { break-inside: avoid; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
@@ -140,113 +152,512 @@ a.md-print-anchor { white-space: pre !important; border-width: initial !importan
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 
-:root { --side-bar-bg-color: #fff; --control-text-color: #777; }
-html { font-size: 16px; }
-body { color: rgb(52, 73, 94); -webkit-font-smoothing: antialiased; line-height: 1.6rem; letter-spacing: 0px; margin: 0px; overflow-x: hidden; font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !important; }
-#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
-#write p { line-height: 1.6rem; word-spacing: 0.05rem; }
-#write ol li { text-indent: 0.5rem; }
-#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
-body > :first-child { margin-top: 0px !important; }
-body > :last-child { margin-bottom: 0px !important; }
-a { color: rgb(66, 185, 131); font-weight: 600; padding: 0px 2px; text-decoration: none; }
-h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
-h1 tt, h1 code { font-size: inherit !important; }
-h2 tt, h2 code { font-size: inherit !important; }
-h3 tt, h3 code { font-size: inherit !important; }
-h4 tt, h4 code { font-size: inherit !important; }
-h5 tt, h5 code { font-size: inherit !important; }
-h6 tt, h6 code { font-size: inherit !important; }
-h2 a, h3 a { color: rgb(52, 73, 94); }
-h1 { padding-bottom: 0.4rem; font-size: 2.2rem; line-height: 1.3; }
-h2 { font-size: 1.75rem; line-height: 1.225; margin: 35px 0px 15px; padding-bottom: 0.5em; border-bottom: 1px solid rgb(221, 221, 221); }
-h3 { font-size: 1.4rem; line-height: 1.43; margin: 20px 0px 7px; }
-h4 { font-size: 1.2rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 1rem; color: rgb(119, 119, 119); }
-p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
-li > ol, li > ul { margin: 0px; }
-hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
-body > h2:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child { margin-top: 0px; padding-top: 0px; }
-body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
-li p.first { display: inline-block; }
-ul, ol { padding-left: 30px; }
-ul:first-child, ol:first-child { margin-top: 0px; }
-ul:last-child, ol:last-child { margin-bottom: 0px; }
-blockquote { border-left: 4px solid rgb(66, 185, 131); padding: 10px 15px; color: rgb(119, 119, 119); background-color: rgba(66, 185, 131, 0.1); }
-table { padding: 0px; word-break: initial; }
-table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
-table tr:nth-child(2n), thead { background-color: rgb(250, 250, 250); }
-table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
-table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
-table tr th:first-child, table tr td:first-child { margin-top: 0px; }
-table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
-#write strong { padding: 0px 1px; }
-#write em { padding: 0px 5px 0px 2px; }
-#write table thead th { background-color: rgb(242, 242, 242); }
-#write .CodeMirror-gutters { border-right: none; }
-#write .md-fences { border: 1px solid rgb(244, 244, 244); -webkit-font-smoothing: initial; line-height: 1.43rem; border-radius: 2px; font-size: 0.85rem; word-wrap: normal; margin: 0.8rem 0px !important; padding: 0.3rem 0px !important; background-color: rgb(248, 248, 248) !important; font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
-#write .CodeMirror-wrap .CodeMirror-code pre { padding-left: 12px; }
-#write code, tt { margin: 0px 2px; padding: 2px 4px; border-radius: 2px; font-size: 0.92rem; color: rgb(233, 105, 0); background-color: rgb(248, 248, 248); font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
-#write .md-footnote { background-color: rgb(248, 248, 248); color: rgb(233, 105, 0); }
-#write mark { background-color: rgb(235, 255, 235); border-radius: 2px; padding: 2px 4px; margin: 0px 2px; color: rgb(34, 34, 34); font-weight: 500; }
-#write del { padding: 1px 2px; }
-.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(34, 162, 201); }
-.cm-s-inner .cm-string { color: rgb(34, 162, 201); }
-.md-task-list-item > input { margin-left: -1.3em; }
-@media print {
-  html { font-size: 13px; }
-  table, pre { break-inside: avoid; }
-  pre { word-wrap: break-word; }
+@import '';
+
+:root {
+    --side-bar-bg-color: #fff;
+    --control-text-color: #777;
+    --font-sans-serif: 'pingfang', 'Ubuntu', 'Source Sans Pro', sans-serif !important;
+    --font-monospace: 'Fira Code', 'Roboto Mono', monospace !important;
 }
-.md-fences { background-color: rgb(248, 248, 248); }
-#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
-.mathjax-block > .code-tooltip { bottom: 0.375rem; }
-#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
-#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
-#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
-#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
-.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
-.md-tag { color: inherit; }
-.md-toc { margin-top: 20px; padding-bottom: 20px; }
-.sidebar-tabs { border-bottom: none; }
-#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
-#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
-#md-notification::before { top: 10px; }
-.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
-header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
-.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
-.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
-.md-lang { color: rgb(180, 101, 77); }
-.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    color: #34495e;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+
+#write p {
+    line-height: 1.6rem;
+    word-spacing: .05rem;
+}
+
+#write ol li {
+    padding-left: 0.5rem;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+a {
+    color: #42b983;
+    font-weight: 600;
+    padding: 0 2px;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+h2 a,
+h3 a {
+    color: #34495e;
+}
+
+h1 {
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.225;
+    margin: 35px 0 15px;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin: 20px 0 7px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #777;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+    margin: 0.8em 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    border-left: 4px solid #42b983;
+    padding: 10px 15px;
+    color: #777;
+    background-color: rgba(66, 185, 131, .1);
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: #fafafa;
+}
+
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write strong {
+    padding: 0 1px;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: #f2f2f2;
+}
+
+#write .CodeMirror-gutters {
+    border-right: none;
+}
+
+#write .md-fences {
+    border: 1px solid #F4F4F4;
+    -webkit-font-smoothing: initial;
+    margin: 0.8rem 0 !important;
+    padding: 0.3rem 0 !important;
+    line-height: 1.43rem;
+    background-color: #F8F8F8 !important;
+    border-radius: 2px;
+    font-family: var(--font-monospace);
+    font-size: 0.85rem;
+    word-wrap: normal;
+}
+
+#write .CodeMirror-wrap .CodeMirror-code pre {
+    padding-left: 12px;
+}
+
+#write code, tt {
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-family: var(--font-monospace);
+    font-size: 0.92rem;
+    color: #e96900;
+    background-color: #f8f8f8;
+}
+
+tt {
+    margin: 0 2px;
+}
+
+#write .md-footnote {
+    background-color: #f8f8f8;
+    color: #e96900;
+}
+
+/* heighlight. */
+#write mark {
+    background-color: #EBFFEB;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 0 2px;
+    color: #222;
+    font-weight: 500;
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.cm-s-inner .cm-link,
+.cm-s-inner.cm-link {
+    color: #22a2c9;
+}
+
+.cm-s-inner .cm-string {
+    color: #22a2c9;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+    background-color: #f8f8f8;
+}
+
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 3px;
+    font-family: var(--font-monospace);
+    padding: 2px 0 0 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: var(--font-sans-serif);
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
 
 
-body { font-family: "fira code"; }
 
-
-
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;}
 </style>
 </head>
 <body class='typora-export os-windows' >
-<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>联系方式</h1><hr /><ul><li>手机： 13606640872 （联系时间：9：00 至 18：00）</li><li>Email：<a href='mailto:FloatShuYin@gmail.com' target='_blank' class='url'>FloatShuYin@gmail.com</a></li></ul><h1><a name='header-n8' class='md-header-anchor '></a>个人信息</h1><ul><li>喻智勇/男/1998</li><li>学历: 大专 (西安交通大学计算机科学与技术)</li><li>技术博客： <a href='http://floatsyi.com' target='_blank' class='url'>http://floatsyi.com</a></li><li>阅读书签: <a href='https://www.gettoby.com/p/0qhnlxhp4lfh' target='_blank' class='url'>https://www.gettoby.com/p/0qhnlxhp4lfh</a></li><li>Github： <a href='https://github.com/FloatingShuYin' target='_blank' class='url'>https://github.com/FloatingShuYin</a></li><li>期望职位: 前端工程师 (可向 node 后端或 IoT 方向发展)</li><li>期望城市： 长沙 || 杭州</li><li>期望薪资： 长沙: 8K-12K || 杭州: 10K-15K</li></ul><h1><a name='header-n26' class='md-header-anchor '></a>开源项目和文章</h1><h2><a name='header-n27' class='md-header-anchor '></a>开源项目</h2><h3><a name='header-n28' class='md-header-anchor '></a>web 应用</h3><h4><a name='header-n29' class='md-header-anchor '></a><a href='https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype'>TC3.0 Marketing Site Prototype</a></h4><p><a href='https://www.topcoder.com/'>TopCoder</a> Marketing Site 的原型</p><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/C06u07I*SDss6n39zE3z8CpccUkdotODnkHqsLEoaYY!/r/dL8AAAAAAAAA' alt='TC3.0 Marketing Site Prototype' referrerPolicy='no-referrer' /></p><p>✅ 为 Marketing Site 添加 svg 动效</p><hr /><h4><a name='header-n34' class='md-header-anchor '></a><a href='https://github.com/FloatingShuYin/connect-app'>connect-app</a></h4><p>参与 <a href='https://www.topcoder.com/'>TopCoder</a> 的 connect-app 项目开发</p><p>线上地址: <a href='https://accounts.topcoder.com/connect/registration' target='_blank' class='url'>https://accounts.topcoder.com/connect/registration</a></p><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA' alt='connect-app' referrerPolicy='no-referrer' /></p><p>✅ 模仿 google Docs 链接编辑模块的功能 ,使用 React 编写 <a href='https://github.com/facebook/draft-js'>Draft</a> 编辑器的插件.</p><hr /><h4><a name='header-n40' class='md-header-anchor '></a><a href='https://github.com/FloatingShuYin/community-nav-prototype'>community-nav-prototype</a></h4><p><a href='https://www.topcoder.com/'>TopCoder</a> 主页的导航栏模块</p><p>线上地址: <a href='https://tc-unified-nav.herokuapp.com/' target='_blank' class='url'>https://tc-unified-nav.herokuapp.com/</a></p><p>✅ 为 TopCoder 主页导航栏原型添加交互动画</p><hr /><h3><a name='header-n45' class='md-header-anchor '></a>Electron 应用</h3><h4><a name='header-n46' class='md-header-anchor '></a><a href='https://github.com/FloatingShuYin/win10-quick-start/tree/dev'>win10-quick-start</a></h4><p>一款 Electron 桌面应用, 基于 scoop 轻松同步你的软件及其配置</p><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/.fx1C*s4mo3WFxbVkC2IGRAwNDySQPzFNS7nHZPk2M4!/r/dDQBAAAAAAAA' alt='win10-quick-start-dark' referrerPolicy='no-referrer' /></p><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/f7IOZcZSP6IPps6n0NZkX.PlBZWD7n993gP1FguoGRs!/r/dMMAAAAAAAAA' alt='win10-quick-start-light' referrerPolicy='no-referrer' /></p><p>✅<a href='https://github.com/FloatingShuYin/quick-start-win10-v1809'>使用 powershell 写的原型</a></p><p>✅ 使用<a href='https://github.com/lukesampson/scoop'>Scoop</a>作为包管理工具</p><hr /><h3><a name='header-n53' class='md-header-anchor '></a>脚本</h3><h4><a name='header-n54' class='md-header-anchor '></a><a href='https://greasyfork.org/zh-CN/scripts/376658-%E4%B8%8D%E8%A6%81%E7%BF%BB%E8%AF%91github%E4%B8%8A%E7%9A%84%E4%BB%A3%E7%A0%81'>不要翻译 github 上的代码</a></h4><p>一个油猴脚本,可以避免 google 网页翻译 github 和 npm 站点中的代码</p><p><img src='https://greasyfork.org/system/screenshots/screenshots/000/013/846/original/Snipaste_2019-01-23_18-09-53.png?1548238275' alt='之前' referrerPolicy='no-referrer' /><img src='https://greasyfork.org/system/screenshots/screenshots/000/013/847/original/Snipaste_2019-01-23_18-06-51.png?1548238275' alt='之后' referrerPolicy='no-referrer' /></p><p>✅ 原创</p><p>✅ 已有 800+ 下载</p><p>✅ 使用了 DOM3 Events 规范的 MutationObserver 来监听 DOM 的变化</p><hr /><h3><a name='header-n61' class='md-header-anchor '></a>爬虫</h3><h4><a name='header-n62' class='md-header-anchor '></a><a href='#'>crawl</a></h4><p>爬虫,爬取一个英语学习网站的 K.K 音标发音示例视频</p><p><a href='https://www.bilibili.com/video/av40140473'>演示视频</a></p><p>✅ 原创</p><p>✅ 使用 phantom.js 无头浏览器来实现真实渲染的爬虫方案</p><hr /><h3><a name='header-n68' class='md-header-anchor '></a>单页面应用</h3><h4><a name='header-n69' class='md-header-anchor '></a><a href='http://floatsyi.com/win10-Calc-Vue'>win10-Calc-Vue</a></h4><p>模仿 Win10 自带计算器的一个 demo</p><p><img src='http://s191.photo.store.qq.com/psb?/V12iDrZG1mzmnh/jyIj5KH6ukcXr5oXEXQMGzD7k5CwIAFKIPw.V32gqAM!/b/dL8AAAAAAAAA' alt='win10calcvue' referrerPolicy='no-referrer' /></p><p>✅ 原创 Vue.js 项目</p><p>✅ 实现了『标准计算器』模块，以及模块间的切换（使用 vue-router）切换时有简单动效（使用 animate.css）</p><p>✅ 实现了历史记录（使用动态组件）</p><hr /><h2><a name='header-n76' class='md-header-anchor '></a>文章</h2><h4><a name='header-n77' class='md-header-anchor '></a><a href='http://floatsyi.com/2019/06/14/%E4%BB%8Epython%E5%88%B0javascript%E5%85%A8%E6%A0%88%E6%8C%87%E5%8D%97/'>从 python 到 javascript 全栈</a></h4><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/p4hK.uehQOfFAbBprmpVBLT3JJS6AH3TFk0mlCq4nxI!/r/dL8AAAAAAAAA' alt='从 python 到 javascript 全栈' referrerPolicy='no-referrer' /></p><p>✅ 原创文章</p><h4><a name='header-n80' class='md-header-anchor '></a><a href='http://floatsyi.com/categories/Win10-15063/'>Window 10 V.15063 使用技巧与界面美化</a></h4><p><img src='http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/LLcShTIn5J0rqjSLXG.2yPAewJuxsWEXwy0op.*At7U!/r/dMAAAAAAAAAA' alt='win10desktop' referrerPolicy='no-referrer' /></p><p>✅ 原创文章</p><p>为打造 <strong>高效率</strong>、<strong>高颜值</strong> 的 Window 工作、娱乐、开发环境而生</p><h2><a name='header-n84' class='md-header-anchor '></a>开源社区的 PR</h2><ul><li><a href='https://github.com/FloatingShuYin/node-powershell' target='_blank' class='url'>https://github.com/FloatingShuYin/node-powershell</a></li><li><a href='https://github.com/FloatingShuYin/WinDynamicDesktop' target='_blank' class='url'>https://github.com/FloatingShuYin/WinDynamicDesktop</a></li><li><a href='https://github.com/FloatingShuYin/Motrix' target='_blank' class='url'>https://github.com/FloatingShuYin/Motrix</a></li></ul><hr /><h1><a name='header-n93' class='md-header-anchor '></a>技能清单</h1><p>以下为我熟悉的技能：</p><ul><li>基础： HTML &amp; CSS &amp; ES5 &amp; ES6</li><li>前端框架： Vue.js 全家桶</li><li>版本管理： Git</li></ul><p>了解过的：</p><ul><li>前端工程化： Webpack</li><li>包管理工具: npm &amp; yarn</li><li>前端库: React.js</li><li>前端框架: Electron</li><li>预编译语言: TypeScript &amp; Sass</li><li>函数库: Lodash &amp; Ramda</li><li>后端： Java Web &amp; Node.js</li></ul><p>正在研习的：</p><ul><li>Koa2 + Nuxt.js 服务端渲染 &amp; 前后端分离架构</li></ul><p>更多可能。。。</p><p><strong>(可向 node 后端或 IoT 方向发展)</strong></p><hr /><h1><a name='header-n125' class='md-header-anchor '></a>致谢</h1><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p></div>
+<div  id='write'  class = ''><h1><a name="联系方式" class="md-header-anchor"></a><span>联系方式</span></h1><hr /><ul><li><span>手机： 13606640872</span></li><li><span>邮箱： </span><a href='mailto:floatshuyin@gmail.com' target='_blank' class='url'>floatshuyin@gmail.com</a></li></ul><h1><a name="技术栈" class="md-header-anchor"></a><span>技术栈</span></h1><hr /><p><span>以下为我熟悉的技术栈：</span></p><ul><li><span>基础： HTML (5) &amp; CSS (3) &amp; JavaScript (ESNext)</span></li><li><span>预编译语言: TypeScript &amp; Sass</span></li><li><span>前端库： React (Hooks） &amp; Vue (3)</span></li><li><span>工程化/开发工具： Webpack &amp; Babel &amp; PM2 &amp; Docker &amp; Jira &amp; Confluence &amp; VSCode</span></li><li><span>代码规范： Eslint &amp; Prettier &amp; Commitlint</span></li><li><span>版本管理： Git</span></li><li><span>包管理工具: npm &amp; yarn</span></li><li><span>后端： Node</span></li></ul><p><span>更多可能。。。(就列这些了，我对我的技术栈没有限制，因为看完文档都能写)</span>
+<span>我是按照这张</span><a href='https://github.com/kamranahmedse/developer-roadmap'><span>开发者路线图</span></a><span>来学的, 基本上都看过文档，都用过。</span>
+<img src="http://r.photo.store.qq.com/psc?/V12iDrZG1mzmnh/45NBuzDIW489QBoVep5mcQT0IQX.0EeTUiooW9oLOmTAjwjuH5x3EqswvdjaaEPEUgX1pGIgFnXbnCsUYG6slr.gpiOqMJy0zx.3bOf.3TY!/r" referrerpolicy="no-referrer" alt="frontend"></p><hr /><h1><a name="个人信息" class="md-header-anchor"></a><span>个人信息</span></h1><ul><li><span>喻智勇/男/1998</span></li><li><span>学历: 大专 (西安交通大学计算机科学与技术)</span></li><li><span>技术博客： </span><a href='http://floatsyi.com' target='_blank' class='url'>http://floatsyi.com</a></li><li><span>github &lt;</span><a href='https://github.com/doublethinkio' target='_blank' class='url'>https://github.com/doublethinkio</a></li><li><span>阅读书签: </span><a href='https://www.gettoby.com/p/0qhnlxhp4lfh' target='_blank' class='url'>https://www.gettoby.com/p/0qhnlxhp4lfh</a></li><li><span>期望职位: 前端工程师/全栈工程师</span></li><li><span>期望城市： 长沙</span></li><li><span>期望薪资： 8-12K</span></li></ul><hr /><h1><a name="开源项目" class="md-header-anchor"></a><span>开源项目</span></h1><h3><a name="开源库" class="md-header-anchor"></a><span>开源库</span></h3><h4><a name="use-animate-csshttpsgithubcomdoublethinkiouse-animate-css" class="md-header-anchor"></a><a href='https://github.com/doublethinkio/use-animate-css'><span>use-animate-css</span></a></h4><p><span>使用 typescript 编写的 react hooks， 封装了 </span><a href='https://github.com/animate-css/animate.css'><span>animate.css</span></a></p><p><img src="http://r.photo.store.qq.com/psc?/V12iDrZG1mzmnh/45NBuzDIW489QBoVep5mcQT0IQX.0EeTUiooW9oLOmRu*uIwbtLEoj8CdsvU3Xrj9lzTulXRfFMthIw*ndyATeHpjjdOqXWgkVWAAQMf0v0!/r" referrerpolicy="no-referrer" alt="use-animate-css"></p><p><span>✨ Live Demo: </span><a href='https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx' target='_blank' class='url'>https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx</a></p><hr /><h4><a name="development-environment-manualhttpsgithubcomdoublethinkiodevelopment-environment-manual" class="md-header-anchor"></a><a href='https://github.com/doublethinkio/development-environment-manual'><span>development-environment-manual</span></a></h4><p><span>整理了一些编程语言的开发环境搭建教程</span></p><p><img src="http://r.photo.store.qq.com/psc?/V12iDrZG1mzmnh/45NBuzDIW489QBoVep5mcfw9K2IdsrrOKEaHq1niMRNj0fupmlZTVsQOXT87hBzMdGTgicFc4EPF10aNTf5w1OSsj3Jm3JmeG2vhLPEvrYI!/r" referrerpolicy="no-referrer"></p><hr /><p>&nbsp;</p><h4><a name="tc30-marketing-site-prototypehttpsgitlabcomfloatingshuyintc3-marketing-site-prototype" class="md-header-anchor"></a><a href='https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype'><span>TC3.0 Marketing Site Prototype</span></a></h4><p><a href='https://www.topcoder.com/'><span>TopCoder</span></a><span> Marketing Site 的原型</span></p><p><img src="http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/C06u07I*SDss6n39zE3z8CpccUkdotODnkHqsLEoaYY!/r/dL8AAAAAAAAA" referrerpolicy="no-referrer" alt="TC3.0 Marketing Site Prototype"></p><p><span>✅ 为 Marketing Site 添加 svg 动效</span></p><p><span>✅ 为 TopCoder 主页导航栏原型添加交互动画</span></p><hr /><p>&nbsp;</p><h4><a name="connect-apphttpsgithubcomfloatingshuyinconnect-app" class="md-header-anchor"></a><a href='https://github.com/FloatingShuYin/connect-app'><span>connect-app</span></a></h4><p><span>参与 </span><a href='https://www.topcoder.com/'><span>TopCoder</span></a><span> 的 connect-app 项目开发</span></p><p><span>线上地址: </span><a href='https://accounts.topcoder.com/connect/registration' target='_blank' class='url'>https://accounts.topcoder.com/connect/registration</a></p><p><img src="http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA" referrerpolicy="no-referrer" alt="connect-app"></p><p><span>✅ 使用 React 编写 </span><a href='https://github.com/facebook/draft-js'><span>Draft</span></a><span> 编辑器的插件实现类似 </span><a href='https://docs.google.com/'><span>google Docs</span></a><span> 链接编辑模块的功能</span></p><hr /><h1><a name="致谢" class="md-header-anchor"></a><span>致谢</span></h1><p><span>感谢您花时间阅读我的简历，期待能有机会和您共事。</span></p></div>
 </body>
 </html>
