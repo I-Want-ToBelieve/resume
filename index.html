@@ -2,14 +2,15 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>喻智勇-前端工程师-13606640872</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>Reade</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -77,6 +78,7 @@ div.hr:focus { cursor: none; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
@@ -86,7 +88,6 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -100,6 +101,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -150,286 +152,292 @@ table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
 
 
-.CodeMirror { height: auto; }
-.CodeMirror.cm-s-inner { background: inherit; }
-.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
-.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
-.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
-.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
-.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
-.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
-.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
-.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
-.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
-.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
-.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
-.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
-.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
-.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
-.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
-.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
-.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
-.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
-.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
-.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
-.cm-negative { color: rgb(221, 68, 68); }
-.cm-positive { color: rgb(34, 153, 34); }
-.cm-header, .cm-strong { font-weight: 700; }
-.cm-del { text-decoration: line-through; }
-.cm-em { font-style: italic; }
-.cm-link { text-decoration: underline; }
-.cm-error { color: red; }
-.cm-invalidchar { color: red; }
-.cm-constant { color: rgb(38, 139, 210); }
-.cm-defined { color: rgb(181, 137, 0); }
-div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
-div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
-.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
-.CodeMirror { position: relative; overflow: hidden; }
-.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
-.CodeMirror-sizer { position: relative; }
-.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
-.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
-.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
-.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
-.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
-.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
-.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
-.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
-.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
-.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
-.CodeMirror-lines { cursor: text; }
-.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
-.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
-.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
-.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
-.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
-.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
-.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
-.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
-.CodeMirror-measure pre { position: static; }
-.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
-.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
-.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
-.cm-searching { background: rgba(255, 255, 0, 0.4); }
-@media print {
-  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+
+/* CSS Document */
+.CodeMirror {
+    color: white;
 }
 
+/** code highlight */
 
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('file:///S://Users//game//AppData//Roaming//Typora/themes/vue/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@import '';
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: #fff;
+}
+/* done*/
+.cm-s-inner .cm-keyword {
+    color: #c5a5c5
+}
+
+.cm-s-inner .cm-tag {
+    color: #fc929e;
+}
+
+.cm-s-inner .cm-attribute {
+    color: #c5a5c5;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #b8bfc6;
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string {
+    color: #8dc891
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: rgb(216, 216, 216)
+}
+/*skip*/
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: #8d8df0;
+}
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.cm-s-inner .cm-string-2 {
+    color: #f50;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: #d4d4d4;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #f3b3f8;
+}
+
+.cm-s-inner .cm-bracket {
+    color: #997;
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: #84B6CB;
+}
+
+.cm-s-inner .cm-number {
+    color: #5a9bcf;
+}
+
+.cm-s-inner .cm-variable {
+    color: #d1d7dd;
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: #9FBAD5;
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: #1cc685;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: #4a89dc;
+    color: #fff !important;
+    text-shadow: none;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
+}
+
+/* CSS Document */
+
+/** markdown source **/
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property
+{
+    color: #cebcca;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid #b8bfc6;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #9FB1FF;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #A7A7D9
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #848695;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #95B94B;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: rgba(51, 51, 51, 0.72);
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+	color: #8aa1e1;
+}@import "";
+@import ""
 
 :root {
-    --side-bar-bg-color: #fff;
+    --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
-    --font-sans-serif: 'Ubuntu', 'Source Sans Pro', sans-serif !important;
-    --font-monospace: 'Fira Code', 'Roboto Mono', monospace !important;
-}
-
-html {
+  }
+  
+  html {
     font-size: 16px;
-}
-
-body {
-    font-family: var(--font-sans-serif);
-    color: #34495e;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.6rem;
-    letter-spacing: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-#write {
+  }
+  
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    line-height: 1.7;
+  }
+  
+  #write {
     max-width: 860px;
     margin: 0 auto;
-    padding: 20px 30px 100px;
-}
-
-#write p {
-    line-height: 1.6rem;
-    word-spacing: .05rem;
-}
-
-#write ol li {
-    padding-left: 0.5rem;
-}
-
-#write > ul:first-child,
-#write > ol:first-child {
+    padding: 30px;
+    padding-bottom: 100px;
+  }
+  #write > ul:first-child,
+  #write > ol:first-child{
     margin-top: 30px;
-}
-
-body > *:first-child {
-    margin-top: 0 !important;
-}
-
-body > *:last-child {
-    margin-bottom: 0 !important;
-}
-
-a {
-    color: #42b983;
-    font-weight: 600;
-    padding: 0 2px;
+  }
+  
+  a {
+    color :rgb(26, 26, 26);
+    background-color: rgba(187,239,253,0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
     line-height: 1.4;
     cursor: text;
-}
-
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
+  }
+  h1:hover a.anchor,
+  h2:hover a.anchor,
+  h3:hover a.anchor,
+  h4:hover a.anchor,
+  h5:hover a.anchor,
+  h6:hover a.anchor {
     text-decoration: none;
-}
-
-h1 tt,
-h1 code {
-    font-size: inherit !important;
-}
-
-h2 tt,
-h2 code {
-    font-size: inherit !important;
-}
-
-h3 tt,
-h3 code {
-    font-size: inherit !important;
-}
-
-h4 tt,
-h4 code {
-    font-size: inherit !important;
-}
-
-h5 tt,
-h5 code {
-    font-size: inherit !important;
-}
-
-h6 tt,
-h6 code {
-    font-size: inherit !important;
-}
-
-h2 a,
-h3 a {
-    color: #34495e;
-}
-
-h1 {
-    padding-bottom: .4rem;
-    font-size: 2.2rem;
-    line-height: 1.3;
-}
-
-h2 {
-    font-size: 1.75rem;
-    line-height: 1.225;
-    margin: 35px 0 15px;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #ddd;
-}
-
-h3 {
-    font-size: 1.4rem;
-    line-height: 1.43;
-    margin: 20px 0 7px;
-}
-
-h4 {
-    font-size: 1.2rem;
-}
-
-h5 {
-    font-size: 1rem;
-}
-
-h6 {
-    font-size: 1rem;
+  }
+  h1 tt,
+  h1 code {
+    font-size: inherit;
+  }
+  h2 tt,
+  h2 code {
+    font-size: inherit;
+  }
+  h3 tt,
+  h3 code {
+    font-size: inherit;
+  }
+  h4 tt,
+  h4 code {
+    font-size: inherit;
+  }
+  h5 tt,
+  h5 code {
+    font-size: inherit;
+  }
+  h6 tt,
+  h6 code {
+    font-size: inherit;
+  }
+  h1 {
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  h2 {
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h3 {
+    font-size: 18.72px;
+    line-height: 25px;
+  }
+  h4 {
+    color: #6d6d6d;
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h6 {
+   font-size: 1em;
     color: #777;
-}
-
-p,
-blockquote,
-ul,
-ol,
-dl,
-table {
+  }
+  p{
+    margin: 0;
+    margin-top: 25px;
+  }
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table{
     margin: 0.8em 0;
-}
-
-li > ol,
-li > ul {
+  }
+  li>ol,
+  li>ul {
     margin: 0 0;
-}
-
-hr {
+  }
+  hr {
     height: 2px;
     padding: 0;
     margin: 16px 0;
@@ -437,221 +445,124 @@ hr {
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
-}
-
-body > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h1:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h3:first-child,
-body > h4:first-child,
-body > h5:first-child,
-body > h6:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-a:first-child h1,
-a:first-child h2,
-a:first-child h3,
-a:first-child h4,
-a:first-child h5,
-a:first-child h6 {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-h1 p,
-h2 p,
-h3 p,
-h4 p,
-h5 p,
-h6 p {
-    margin-top: 0;
-}
-
-li p.first {
+  }
+  
+  li p.first {
     display: inline-block;
-}
-
-ul,
-ol {
+  }
+  ul,
+  ol {
     padding-left: 30px;
-}
-
-ul:first-child,
-ol:first-child {
+  }
+  ul:first-child,
+  ol:first-child {
     margin-top: 0;
-}
-
-ul:last-child,
-ol:last-child {
+  }
+  ul:last-child,
+  ol:last-child {
     margin-bottom: 0;
-}
-
-blockquote {
-    border-left: 4px solid #42b983;
-    padding: 10px 15px;
-    color: #777;
-    background-color: rgba(66, 185, 131, .1);
-}
-
-table {
+  }
+  blockquote {
+    background-color: rgba(255,229,100,0.3);
+    border-left: 9px solid #ffe564;
+    padding: 20px 45px 20px 26px;
+    color: black;
+    box-sizing: border-box;
+    display: block;
+  }
+  blockquote blockquote {
+    padding-right: 0;
+  }
+  table {
     padding: 0;
     word-break: initial;
-}
-
-table tr {
+  }
+  table tr {
     border-top: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
-}
-
-table tr:nth-child(2n),
-thead {
-    background-color: #fafafa;
-}
-
-table tr th {
+  }
+  table tr:nth-child(2n),
+  thead {
+    background-color: #f8f8f8;
+  }
+  table tr th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
-}
-
-table tr td {
+  }
+  table tr td {
     border: 1px solid #dfe2e5;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
-}
-
-table tr th:first-child,
-table tr td:first-child {
+  }
+  table tr th:first-child,
+  table tr td:first-child {
     margin-top: 0;
-}
-
-table tr th:last-child,
-table tr td:last-child {
+  }
+  table tr th:last-child,
+  table tr td:last-child {
     margin-bottom: 0;
-}
-
-#write strong {
-    padding: 0 1px;
-}
-
-#write em {
-    padding: 0 5px 0 2px;
-}
-
-#write table thead th {
-    background-color: #f2f2f2;
-}
-
-#write .CodeMirror-gutters {
-    border-right: none;
-}
-
-#write .md-fences {
-    border: 1px solid #F4F4F4;
-    -webkit-font-smoothing: initial;
-    margin: 0.8rem 0 !important;
-    padding: 0.3rem 0 !important;
-    line-height: 1.43rem;
-    background-color: #F8F8F8 !important;
-    border-radius: 2px;
-    font-family: var(--font-monospace);
-    font-size: 0.85rem;
-    word-wrap: normal;
-}
-
-#write .CodeMirror-wrap .CodeMirror-code pre {
-    padding-left: 12px;
-}
-
-#write code, tt {
-    padding: 2px 4px;
-    border-radius: 2px;
-    font-family: var(--font-monospace);
-    font-size: 0.92rem;
-    color: #e96900;
+  }
+  
+  .CodeMirror-lines {
+    padding-left: 4px;
+  }
+  
+  .code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+  }
+  
+  .md-fences,
+  code,
+  tt {
+    /* border: 1px solid #e7eaed; */
     background-color: #f8f8f8;
-}
-
-tt {
-    margin: 0 2px;
-}
-
-#write .md-footnote {
-    background-color: #f8f8f8;
-    color: #e96900;
-}
-
-/* heighlight. */
-#write mark {
-    background-color: #EBFFEB;
-    border-radius: 2px;
-    padding: 2px 4px;
-    margin: 0 2px;
-    color: #222;
-    font-weight: 500;
-}
-
-#write del {
-    padding: 1px 2px;
-}
-
-.cm-s-inner .cm-link,
-.cm-s-inner.cm-link {
-    color: #22a2c9;
-}
-
-.cm-s-inner .cm-string {
-    color: #22a2c9;
-}
-
-.md-task-list-item > input {
-    margin-left: -1.3em;
-}
-
-@media print {
+    /* border-radius: 3px; */
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.94em;
+  }
+  
+  code {
+    background-color: rgba(255,229,100,0.2);
+    padding: 0 3px;
+    font-style: normal;
+  }
+  
+  .md-fences {
+    margin-bottom: 16px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(40, 44, 52);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .md-task-list-item > input {
+  margin-left: -1.3em;
+  }
+  
+  @media print {
     html {
         font-size: 13px;
     }
-
     table,
     pre {
         page-break-inside: avoid;
     }
-
     pre {
         word-wrap: break-word;
     }
-}
-
-.md-fences {
-    background-color: #f8f8f8;
-}
-
-.md-diagram-panel {
-    position: static !important;
-}
-
-#write pre.md-meta-block {
-    padding: 1rem;
+  }
+  
+  #write pre.md-meta-block {
+  padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
@@ -659,109 +570,120 @@ tt {
     border-radius: 3px;
     color: #777777;
     margin-top: 0 !important;
-}
-
-.mathjax-block > .code-tooltip {
-    bottom: .375rem;
-}
-
-#write > h3.md-focus:before {
-    left: -1.5625rem;
-    top: .375rem;
-}
-
-#write > h4.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
-}
-
-#write > h5.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
-}
-
-#write > h6.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
-}
-
-.md-image > .md-meta {
+  }
+  
+  .mathjax-block>.code-tooltip {
+  bottom: .375rem;
+  }
+  
+  .md-mathjax-midline {
+    background: #fafafa;
+  }
+  
+  #write>h3.md-focus:before{
+  left: -1.5625rem;
+  top: .375rem;
+  }
+  #write>h4.md-focus:before{
+  left: -1.5625rem;
+  top: .285714286rem;
+  }
+  #write>h5.md-focus:before{
+  left: -1.5625rem;
+  top: .285714286rem;
+  }
+  #write>h6.md-focus:before{
+  left: -1.5625rem;
+  top: .285714286rem;
+  }
+  .md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
     border-radius: 3px;
-    font-family: var(--font-monospace);
-    padding: 2px 0 0 4px;
+    padding: 2px 0px 0px 4px;
     font-size: 0.9em;
     color: inherit;
-}
-
-.md-tag {
-    color: inherit;
-}
-
-.md-toc {
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.sidebar-tabs {
+  }
+  
+  .md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+  }
+  
+  /* menu */
+  .md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+  }
+  .md-toc > p {
+    line-height: 20px;
+  }
+  .md-toc p a {
+    background: none;
+    color: rgb(27, 139, 170);
+    border: none;
+  }
+  
+  .sidebar-tabs {
     border-bottom: none;
-}
-
-#typora-quick-open {
+  }
+  
+  #typora-quick-open {
     border: 1px solid #ddd;
     background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
+  }
+  
+  #typora-quick-open-item {
     background-color: #FAFAFA;
     border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
     border-style: solid;
     border-width: 1px;
-}
-
-#md-notification:before {
-    top: 10px;
-}
-
-/** focus mode */
-
-.on-focus-mode blockquote {
+  }
+  
+  /** focus mode */
+  .on-focus-mode blockquote {
     border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header,
-.context-menu,
-.megamenu-content,
-footer {
-    font-family: var(--font-sans-serif);
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state {
+  }
+  /*
+  header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+  }
+  */
+  .file-node-content:hover .file-node-icon,
+  .file-node-content:hover .file-node-open-state{
     visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
+  }
+  
+  .mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
     background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
+  }
+  
+  .md-lang {
     color: #b4654d;
-}
-
-.html-for-mac .context-menu {
+  }
+  
+  .html-for-mac .context-menu {
     --item-hover-bg-color: #E6F0FE;
-}
+  }
+  
+  #md-notification .btn {
+    border: 0;
+  }
+  
+  .dropdown-menu .divider {
+    border-color: #e5e5e5;
+  }
+  
 
-
-
+ :root {--mermaid-font-zoom:1.5em ;} 
 </style>
 </head>
 <body class='typora-export os-windows'>
-<div id='write'  class=''><p><span>此简历在线地址:</span><a href='https://floatsyi.com/resume/' target='_blank' class='url'>https://floatsyi.com/resume/</a></p><h1><a name="个人信息" class="md-header-anchor"></a><span>个人信息</span></h1><ul><li><span>喻智勇/男/1998</span></li><li><span>学历: 大专 (计算机科学与技术)</span></li><li><span>博客: </span><a href='http://floatsyi.com' target='_blank' class='url'>http://floatsyi.com</a></li><li><span>github: </span><a href='https://github.com/doublethinkio' target='_blank' class='url'>https://github.com/doublethinkio</a></li><li><span>阅读书签: </span><a href='https://www.gettoby.com/p/0qhnlxhp4lfh' target='_blank' class='url'>https://www.gettoby.com/p/0qhnlxhp4lfh</a></li><li><span>期望职位: 前端工程师</span></li><li><span>期望城市: 长沙(其他城市可远程)</span></li><li><span>期望薪资: 12k-13k (特别好的公司可谈)</span></li></ul><h1><a name="联系方式" class="md-header-anchor"></a><span>联系方式</span></h1><ul><li><span>手机: 13606640872</span></li><li><span>邮箱: </span><a href='mailto:floatshuyin@gmail.com' target='_blank' class='url'>floatshuyin@gmail.com</a></li></ul><h1><a name="技术栈" class="md-header-anchor"></a><span>技术栈</span></h1><p><span>以下为我熟练使用的技术栈:</span></p><ul><li><span>基础: html (5) &amp; css (3) &amp; javascript (esnext) &amp; node (lts)</span></li><li><span>预编译语言: typescript &amp; sass</span></li><li><span>前端库: react (hooks） &amp; vue (3)</span></li><li><span>工程化: webpack &amp; babel &amp; jest &amp; docker</span></li><li><span>编辑器: vscode &amp; neovim</span></li><li><span>代码规范: eslint &amp; prettier &amp; commitlint</span></li><li><span>文档: markdown</span></li><li><span>版本管理: git</span></li><li><span>包管理工具: npm &amp; yarn &amp; cargo</span></li><li><span>后端库: koa2</span></li><li><span>webassembly: rust</span></li><li><span>桌面框架: electron</span></li><li><span>操作系统: windows 10 &amp; wsl &amp; archlinux &amp; mac</span></li></ul><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 12px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">更多可能。。。(我对我的技术栈没有限制，因为看完文档都能写)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><h1><a name="个人优势" class="md-header-anchor"></a><span>个人优势</span></h1><p><span>两年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，GitLab 私服搭建， 还能写得一手同事都夸赞的干净代码。</span></p><h1><a name="工作经历" class="md-header-anchor"></a><span>工作经历</span></h1><ul><li><span>公司名称: topcoder</span></li><li><span>工作性质: 远程</span></li><li><span>职位类型: 前端</span></li><li><span>工作内容: 前端 web 页面开发</span></li><li><span>在职时间: 2018.06 - 2019.11</span></li></ul><hr /><ul><li><span>公司名称: 猫兜灵</span></li><li><span>工作性质: 远程</span></li><li><span>职位类型: 前端</span></li><li><span>工作内容: 框架选型，脚手架搭建，组件开发，前端自动化测试</span></li><li><span>在职时间: 2019.12 - 2020.08</span></li></ul><h1><a name="项目与开源库" class="md-header-anchor"></a><span>项目与开源库</span></h1><h3><a name="web" class="md-header-anchor"></a><span>Web</span></h3><hr /><h4><a name="学习观-web" class="md-header-anchor"></a><span>学习观 web</span></h4><p><span>一个应用多模态学习的在线学习平台。</span>
-<span>技术栈方面使用 react hooks + typescript + css in js + jest + babel + webpack</span>
-<span>我负责框架选型，工程化配置，代码规范，单元测试，以及视频模态区的编写。</span></p><h4><a name="tc30-marketing-site-prototype" class="md-header-anchor"></a><span>TC3.0 Marketing Site Prototype</span></h4><p><a href='https://www.topcoder.com/'><span>TopCoder</span></a><span> Marketing Site 的原型</span></p><!-- ![TC3.0 Marketing Site Prototype](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/C06u07I*SDss6n39zE3z8CpccUkdotODnkHqsLEoaYY!/r/dL8AAAAAAAAA) --><p><span>✅ 为 Marketing Site 添加 svg 动效</span>
-<span>✅ 为 TopCoder 主页导航栏原型添加交互动画</span></p><p><span>线上地址: </span><a href='https://www.topcoder.com/' target='_blank' class='url'>https://www.topcoder.com/</a>
-<span>项目地址: </span><a href='https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype' target='_blank' class='url'>https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype</a></p><p>&nbsp;</p><h4><a name="connect-app" class="md-header-anchor"></a><span>connect-app</span></h4><p><span>参与 TopCoder 的 connect-app 项目开发</span></p><p><span>✅ 使用 React 编写 </span><a href='https://github.com/facebook/draft-js'><span>Draft</span></a><span> 编辑器的插件实现类似 </span><a href='https://docs.google.com/'><span>google Docs</span></a><span> 链接编辑模块的功能</span></p><p><span>线上地址: </span><a href='https://accounts.topcoder.com/connect/registration' target='_blank' class='url'>https://accounts.topcoder.com/connect/registration</a>
-<span>项目地址: </span><a href='https://github.com/FloatingShuYin/connect-app' target='_blank' class='url'>https://github.com/FloatingShuYin/connect-app</a></p><!-- ![connect-app](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA) --><h3><a name="electron" class="md-header-anchor"></a><span>Electron</span></h3><h4><a name="electron-react-boilerplate" class="md-header-anchor"></a><span>electron-react-boilerplate</span></h4><p><span>electron 应用 boilerplate， 基于 React, React Router, easy-peasy,  Webpack, React Hot Loader 快速开发 Electron 应用</span></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/electron-react-boilerplate' target='_blank' class='url'>https://github.com/doublethinkio/electron-react-boilerplate</a></p><h3><a name="开源库" class="md-header-anchor"></a><span>开源库</span></h3><hr /><h4><a name="use-animate-css" class="md-header-anchor"></a><span>use-animate-css</span></h4><p><span>使用 typescript 编写的 react hooks， 封装了 </span><a href='https://github.com/animate-css/animate.css'><span>animate.css</span></a></p><!-- ![use-animate-css](http://r.photo.store.qq.com/psc?/V12iDrZG1mzmnh/45NBuzDIW489QBoVep5mcQT0IQX.0EeTUiooW9oLOmRu*uIwbtLEoj8CdsvU3Xrj9lzTulXRfFMthIw*ndyATeHpjjdOqXWgkVWAAQMf0v0!/r) --><p><span>✨ Live Demo: </span><a href='https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx' target='_blank' class='url'>https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx</a></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/use-animate-css' target='_blank' class='url'>https://github.com/doublethinkio/use-animate-css</a></p><h3><a name="chrome-扩展" class="md-header-anchor"></a><span>chrome 扩展</span></h3><hr /><h4><a name="highlight" class="md-header-anchor"></a><span>highlight</span></h4><p><span>内容: 一个可以给指定关键字添加高亮效果和额外功能的 chrome 扩展</span></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/highlight' target='_blank' class='url'>https://github.com/doublethinkio/highlight</a></p><h3><a name="油猴脚本" class="md-header-anchor"></a><span>油猴脚本</span></h3><hr /><h4><a name="dont-translate-github-code" class="md-header-anchor"></a><span>Don&#39;t translate Github code</span></h4><p><span>内容: 避免 google 网页翻译 github 站点中 pre 标签内的内容</span></p><p><span>项目链接: </span><a href='https://greasyfork.org/zh-CN/scripts/376658-%E4%B8%8D%E8%A6%81%E7%BF%BB%E8%AF%91github%E4%B8%8A%E7%9A%84%E4%BB%A3%E7%A0%81/' target='_blank' class='url'>https://greasyfork.org/zh-CN/scripts/376658-%E4%B8%8D%E8%A6%81%E7%BF%BB%E8%AF%91github%E4%B8%8A%E7%9A%84%E4%BB%A3%E7%A0%81/</a></p><h3><a name="文章" class="md-header-anchor"></a><span>文章</span></h3><hr /><h4><a name="development-environment-manualhttpsgithubcomdoublethinkiodevelopment-environment-manual" class="md-header-anchor"></a><a href='https://github.com/doublethinkio/development-environment-manual'><span>development-environment-manual</span></a></h4><p><span>整理了一些编程语言的开发环境搭建教程</span></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/development-environment-manual' target='_blank' class='url'>https://github.com/doublethinkio/development-environment-manual</a></p><!-- ![](http://r.photo.store.qq.com/psc?/V12iDrZG1mzmnh/45NBuzDIW489QBoVep5mcfw9K2IdsrrOKEaHq1niMRNj0fupmlZTVsQOXT87hBzMdGTgicFc4EPF10aNTf5w1OSsj3Jm3JmeG2vhLPEvrYI!/r) --><h1><a name="致谢" class="md-header-anchor"></a><span>致谢</span></h1><p><span>感谢您花时间阅读我的简历，期待能有机会和您共事。</span></p></div>
+<div id='write'  class=''><p><span>此简历在线地址: </span><a href='https://floatsyi.com/resume/' target='_blank' class='url'>https://floatsyi.com/resume/</a></p><h1><a name="个人信息" class="md-header-anchor"></a><span>个人信息</span></h1><ul><li><span>喻智勇/男/1998</span></li><li><span>学历: 大专 (计算机科学与技术)</span></li><li><span>博客: </span><a href='https://floatsyi.com' target='_blank' class='url'>https://floatsyi.com</a></li><li><span>github: </span><a href='https://github.com/doublethinkio' target='_blank' class='url'>https://github.com/doublethinkio</a></li><li><span>阅读书签: </span><a href='https://www.gettoby.com/p/0qhnlxhp4lfh' target='_blank' class='url'>https://www.gettoby.com/p/0qhnlxhp4lfh</a></li><li><span>工作经验: 三年</span></li><li><span>期望职位: 前端主管</span></li><li><span>期望城市: 深圳</span></li><li><span>期望薪资: 面谈</span></li><li><span>当前状态: 在职</span></li></ul><h1><a name="技术栈" class="md-header-anchor"></a><span>技术栈</span></h1><p><span>以下为我熟悉的技术栈(使用 react hooks 较多):</span></p><ul><li><span>基础: </span><a href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' target='_blank'><span>html5</span></a><span> &amp; </span><a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank'><span>css3</span></a><span> &amp; </span><a href='https://github.com/tc39/proposals' target='_blank'><span>javascript(esnext)</span></a><span> &amp; </span><a href='https://github.com/nodejs/node' target='_blank'><span>node-lts</span></a></li><li><span>预编译语言: </span><a href='https://github.com/microsoft/TypeScript' target='_blank'><span>typescript</span></a><span> &amp; </span><a href='https://github.com/sass/sass' target='_blank'><span>scss</span></a><span> &amp; </span><a href='https://github.com/pugjs/pug' target='_blank'><span>pug</span></a></li><li><span>前端库: </span><a href='https://github.com/facebook/react' target='_blank'><span>react hooks</span></a><span> &amp; </span><a href='https://github.com/vuejs/vue-next' target='_blank'><span>vue-next</span></a></li><li><span>脚手架: </span><a href='https://github.com/facebook/create-react-app' target='_blank'><span>create-react-app</span></a><span> &amp; </span><a href='https://github.com/vuejs/vue-cli' target='_blank'><span>vue-cli</span></a></li><li><span>工程化: </span><a href='https://github.com/webpack/webpack' target='_blank'><span>webpack</span></a><span> &amp; </span><a href='https://github.com/babel/babel' target='_blank'><span>babel</span></a></li><li><span>单元测试: </span><a href='https://github.com/facebook/jest' target='_blank'><span>jest</span></a><span> &amp; </span><a href='https://github.com/testing-library/react-hooks-testing-library' target='_blank'><span>react-hooks-testing-library</span></a></li><li><span>跨端开发框架: </span><a href='https://github.com/NervJS/taro' target='_blank'><span>taro</span></a></li><li><span>编辑器: </span><a href='https://github.com/microsoft/vscode' target='_blank'><span>vscode</span></a><span> &amp; </span><a href='https://github.com/neovim/neovim' target='_blank'><span>neovim</span></a></li><li><span>代码规范: </span><a href='https://github.com/eslint/eslint' target='_blank'><span>eslint</span></a><span> &amp; </span><a href='https://github.com/stylelint/stylelint' target='_blank'><span>stylelint</span></a><span> &amp; </span><a href='https://github.com/prettier/prettier' target='_blank'><span>prettier</span></a><span> &amp; </span><a href='https://github.com/typicode/husky' target='_blank'><span>husky</span></a><span> &amp; </span><a href='https://github.com/conventional-changelog/commitlint' target='_blank'><span>commitlint</span></a><span> &amp; </span><a href='https://github.com/okonet/lint-staged' target='_blank'><span>lint-staged</span></a></li><li><span>文档: </span><a href='https://github.com/commonmark/commonmark-spec' target='_blank'><span>markdown</span></a></li><li><span>版本管理: </span><a href='https://github.com/git/git' target='_blank'><span>git</span></a></li><li><span>包管理工具: </span><a href='https://github.com/npm/cli' target='_blank'><span>npm</span></a><span> &amp; </span><a href='https://github.com/yarnpkg/yarn' target='_blank'><span>yarn</span></a><span> &amp; </span><a href='https://github.com/lukesampson/scoop' target='_blank'><span>scoop</span></a><span> &amp; </span><a href='https://github.com/chocolatey/choco' target='_blank'><span>choco</span></a><span> &amp; </span><a href='https://github.com/pypa/pip' target='_blank'><span>pip</span></a><span> &amp; </span><a href='https://github.com/rust-lang/cargo' target='_blank'><span>cargo</span></a><span> &amp; </span><a href='https://archlinux.org/packages/core/x86_64/pacman' target='_blank'><span>pacman</span></a><span> &amp; </span><a href='https://github.com/Jguer/yay' target='_blank'><span>yay</span></a></li><li><span>操作系统: </span><a href='https://www.microsoft.com/zh-hk/software-download/windows10' target='_blank'><span>windows 10</span></a><span> &amp; </span><a href='https://github.com/yuk7/ArchWSL' target='_blank'><span>wsl</span></a><span> &amp; </span><a href='https://github.com/archlinux' target='_blank'><span>archlinux</span></a><span> &amp; </span><a href='https://www.apple.com.cn/mac' target='_blank'><span>mac</span></a></li><li><span>终端: </span><a href='https://github.com/microsoft/terminal' target='_blank'><span>windows-terminal</span></a><span> &amp; </span><a href='https://github.com/doublethinkio/st' target='_blank'><span>st</span></a></li><li><span>shell: </span><a href='https://github.com/zsh-users/zsh' target='_blank'><span>zsh</span></a></li></ul><p><span>以下为我了解的技术栈</span></p><ul><li><span>微前端: </span><a href='https://github.com/umijs/qiankun' target='_blank'><span>qiankun</span></a></li><li><span>跨平台桌面应用框架: </span><a href='https://github.com/electron/electron' target='_blank'><span>electron</span></a><span> &amp; </span><a href='https://github.com/nodegui/react-nodegui' target='_blank'><span>react.node-gui</span></a>
+<!-- - webassembly: [rust][] [wasm-pack][] --></li></ul><p><span>更多可能(我对我的技术栈没有限制，因为看完文档都能写)</span></p><h1><a name="个人优势" class="md-header-anchor"></a><span>个人优势</span></h1><p><span>五年编码经验, 三年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，gitlab 私服搭建， 还能写得一手同事都夸赞的干净代码。</span></p><h1><a name="联系方式" class="md-header-anchor"></a><span>联系方式</span></h1><ul><li><span>手机: 13606640872</span></li><li><span>邮箱: </span><a href='mailto:floatshuyin@gmail.com' target='_blank' class='url'>floatshuyin@gmail.com</a></li></ul><h1><a name="工作经历" class="md-header-anchor"></a><span>工作经历</span></h1><ul><li><span>公司名称: 西安猫兜灵智能科技有限公司</span></li><li><span>职位类型: 前端主管</span></li><li><span>工作内容: 框架选型，脚手架搭建，组件开发，前端自动化测试</span></li><li><span>在职时间: 2019.12 - 2020.12</span></li></ul><hr /><ul><li><span>公司名称: topcoder</span></li><li><span>职位类型: 前端开发</span></li><li><span>工作内容: 前端 web 页面开发</span></li><li><span>在职时间: 2018.06 - 2019.11</span></li></ul><h1><a name="项目与开源库" class="md-header-anchor"></a><span>项目与开源库</span></h1><h3><a name="web" class="md-header-anchor"></a><span>Web</span></h3><hr /><h4><a name="学习观" class="md-header-anchor"></a><span>学习观</span></h4><p><span>学习观是一个应用多模态学习的在线学习平台.</span></p><p><span>技术栈方面使用 </span><a href='https://github.com/facebook/create-react-app' target='_blank'><span>create-react-app</span></a><span> &amp; </span><a href='https://github.com/facebook/react' target='_blank'><span>react hooks</span></a><span> &amp; </span><a href='https://github.com/microsoft/TypeScript' target='_blank'><span>typescript</span></a><span> &amp; </span><a href='https://github.com/emotion-js/emotion' target='_blank'><span>emotion</span></a><span> &amp; </span><a href='https://github.com/ReactTraining/react-router' target='_blank'><span>react-router</span></a><span> &amp; </span><a href='https://github.com/ctrlplusb/easy-peasy' target='_blank'><span>easy-peasy</span></a><span>,</span>
+<span>并大量使用了 </span><a href='https://github.com/streamich/react-use' target='_blank'><span>react-use</span></a><span> 库中的 hooks.</span></p><p><span>我主要负责框架选型，工程化配置，代码规范，单元测试，以及视频模态区的编写.</span></p><p><span>具体工作内容如下:</span></p><ul><li><span>使用 </span><a href='https://github.com/facebook/create-react-app' target='_blank'><span>create-react-app</span></a><span> 脚手架创建项目, 并使用 </span><a href='https://github.com/gsoft-inc/craco' target='_blank'><span>craco</span></a><span> 自定义 .</span><a href='https://github.com/facebook/create-react-app' target='_blank'><span>create-react-app</span></a><span> </span><a href='https://github.com/webpack/webpack' target='_blank'><span>webpack</span></a><span> 等配置, 避免了 eject.</span></li><li><span>配置 </span><a href='https://github.com/eslint/eslint' target='_blank'><span>eslint</span></a><span> &amp; </span><a href='https://github.com/stylelint/stylelint' target='_blank'><span>stylelint</span></a><span> &amp; </span><a href='https://github.com/prettier/prettier' target='_blank'><span>prettier</span></a><span> &amp; </span><a href='https://github.com/typicode/husky' target='_blank'><span>husky</span></a><span> &amp; </span><a href='https://github.com/conventional-changelog/commitlint' target='_blank'><span>commitlint</span></a><span> &amp; </span><a href='https://github.com/okonet/lint-staged' target='_blank'><span>lint-staged</span></a><span> 以保障代码质量与规范 git commit message.主要是配置代码自动格式化, eslint 检查代码 </span><a href='https://github.com/sass/sass' target='_blank'><span>scss</span></a><span>.</span></li><li><span>编写 README 文档, 主要是写明了一些开发环境的需求(Requirements), 以及快速开始运行项目的步骤(Getting started), 还有就是推荐一些提升编程体验的编辑器插件(Enhance your development experience), 最后是 QA 部分会写明一些常见问题的解决办法, 比如包管理工具 </span><a href='https://github.com/yarnpkg/yarn' target='_blank'><span>yarn</span></a><span> 的淘宝镜像设置, 帮助新人快速融入到项目开发中.</span></li><li><span>使用 </span><a href='https://github.com/testing-library/react-testing-library' target='_blank'><span>react-testing-library</span></a><span> 和 </span><a href='https://github.com/facebook/jest' target='_blank'><span>jest</span></a><span> 编写前端路由的快照测试.</span></li><li><span>配置 </span><a href='https://github.com/webpack/webpack' target='_blank'><span>webpack</span></a><span> </span><a href='https://github.com/postcss/postcss' target='_blank'><span>postcss</span></a><span> 插件, 使用 </span><a href='https://github.com/FullHuman/purgecss' target='_blank'><span>purgecss</span></a><span> 剔除未被使用的 css class，以减少编译后的 css 文件大小.</span></li><li><span>https 请求库选用支持 </span><a href='https://github.com/nodejs/node' target='_blank'><span>node</span></a><span> 与 promise 的 </span><a href='https://github.com/axios/axios' target='_blank'><span>axios</span></a><span>, </span><a href='https://github.com/axios/axios' target='_blank'><span>axios</span></a><span> 还有拦截器插件机制, 通过编写拦截器很方便的实现了 </span><a href='https://github.com/auth0/node-jsonwebtoken' target='_blank'><span>jsonwebtoken</span></a><span> 的获取与自动续期.</span></li><li><span>编写 useAxios hook, 并使用 </span><a href='https://github.com/vercel/swr' target='_blank'><span>swr</span></a><span> 增强 useAxios, 还使用 </span><a href='https://github.com/testing-library/react-hooks-testing-library' target='_blank'><span>react-hooks-testing-library</span></a><span> 编写了 useAxios hook 测试.</span></li><li><span>编写 loading 和 404 页面, 页面路由时 loading 使用的 react suspense fallback, 配合 </span><code>react.lazy</code><span> 异步加载页面, 优化页面请求大小.</span></li><li><span>搜集资料做 react hooks 全局状态管理库的选型, 并输出了一篇</span><a href='https://floatsyi.com/2020/02/28/.Vegetarian-friendly-state-for-React-easy-peasy'><span>比对文章</span></a><span>: 最终选用了 [easy-peasy].</span></li><li><a href='https://github.com/MicheleBertoli/css-in-js' target='_blank'><span>css-in-js</span></a><span> 库的选型时参考 </span><a href='https://github.com/tuchk4/awesome-css-in-js' target='_blank'><span>awesome-css-in-js</span></a><span> 后选用了 </span><a href='https://github.com/emotion-js/emotion' target='_blank'><span>emotion</span></a><span>.</span></li><li><span>视频模态区的播放器组件使用 </span><a href='https://github.com/videojs/video.js' target='_blank'><span>videojs</span></a><span>, 进度条使用的 </span><a href='https://github.com/sghall/react-compound-slider' target='_blank'><span>react-compound-slider</span></a><span>, 并编写了 usePlayOrStop / usePlaybackRates/ useVideoQuality / useVideoTime /useVolume /useFFFR 等 hook.</span></li><li><span>form 组件和 form 验证选用 </span><a href='https://github.com/jaredpalmer/formik' target='_blank'><span>formik</span></a><span>.</span></li><li><span>i18n 选用 </span><a href='https://github.com/i18next/react-i18next' target='_blank'><span>react-i18next</span></a><span>.</span></li><li><span>动画库选用 </span><a href='https://github.com/pmndrs/react-spring' target='_blank'><span>react-spring</span></a><span>, 对于简单的动画还使用了 </span><a href='https://github.com/animate-css/animate.css' target='_blank'><span>animate.css</span></a><span> 库, 对于 </span><a href='https://github.com/animate-css/animate.css' target='_blank'><span>animate.css</span></a><span> 我封装了一个 hook: </span><a href='https://github.com/doublethinkio/use-animate-css' target='_blank'><span>use-animate-css</span></a><span>.</span></li><li><span>编写 useSocialShare hook, 这个 hook 封装了各个社交网站的分享 api.</span></li><li><span>更新项目依赖项并跟进 Breaking changes.</span></li><li><span>...</span></li></ul><h4><a name="学习观后台管理系统" class="md-header-anchor"></a><span>学习观后台管理系统</span></h4><p><span>技术栈方面使用 </span><a href='https://github.com/facebook/create-react-app' target='_blank'><span>create-react-app</span></a><span> &amp; </span><a href='https://github.com/facebook/react' target='_blank'><span>react hooks</span></a><span> &amp; </span><a href='https://github.com/microsoft/TypeScript' target='_blank'><span>typescript</span></a><span> &amp; </span><a href='https://github.com/emotion-js/emotion' target='_blank'><span>emotion</span></a><span> &amp; </span><a href='https://github.com/ReactTraining/react-router' target='_blank'><span>react-router</span></a><span> &amp; </span><a href='https://github.com/ctrlplusb/easy-peasy' target='_blank'><span>easy-peasy</span></a><span> &amp; </span><a href='https://github.com/ant-design/ant-design-pro' target='_blank'><span>ant design pro</span></a><span>.</span></p><p><span>我主要负责框架选型，工程化配置，代码规范，单元测试.</span></p><p><span>具体工作内容如下:</span></p><ul><li><span>编写 useRouter hook 实现配置式动态路由, 路由守卫等功能.</span></li><li><span>配置 </span><a href='https://github.com/webpack/webpack' target='_blank'><span>webpack</span></a><span> 插件 </span><a href='https://github.com/jaywcjlove/mocker-api#using-with-webpack' target='_blank'><span>mocker-api</span></a><span>.</span></li><li><span>更新项目依赖项并跟进 Breaking changes.</span></li><li><span>...</span></li></ul><h4><a name="tc30-marketing-site-prototype" class="md-header-anchor"></a><span>TC3.0 Marketing Site Prototype</span></h4><p><a href='https://www.topcoder.com' target='_blank'><span>topcoder</span></a><span> 的 marketing site 页面</span></p><!-- ![TC3.0 Marketing Site Prototype](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/C06u07I*SDss6n39zE3z8CpccUkdotODnkHqsLEoaYY!/r/dL8AAAAAAAAA) --><p><span>✅ 为 marketing site 添加 svg 动效</span>
+<span>✅ 为 topcoder 主页导航栏原型添加交互动画</span></p><p><span>线上地址: </span><a href='https://www.topcoder.com/' target='_blank' class='url'>https://www.topcoder.com/</a>
+<span>项目地址: </span><a href='https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype' target='_blank' class='url'>https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype</a></p><h4><a name="connect-app" class="md-header-anchor"></a><span>connect-app</span></h4><p><span>参与 topcoder 的 connect-app 项目开发</span></p><p><span>✅ 使用 React 编写 </span><a href='https://github.com/facebook/draft-js' target='_blank'><span>draft</span></a><span> 编辑器的插件实现类似 </span><a href='https://docs.google.com' target='_blank'><span>google docs</span></a><span> 链接编辑模块的功能</span></p><p><span>线上地址: </span><a href='https://accounts.topcoder.com/connect/registration' target='_blank' class='url'>https://accounts.topcoder.com/connect/registration</a>
+<span>项目地址: </span><a href='https://github.com/doublethinkio/connect-app' target='_blank' class='url'>https://github.com/doublethinkio/connect-app</a></p><!-- ![connect-app](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA) --><h3><a name="开源库" class="md-header-anchor"></a><span>开源库</span></h3><hr /><h4><a name="use-animate-css" class="md-header-anchor"></a><span>use-animate-css</span></h4><p><span>使用 </span><a href='https://github.com/microsoft/TypeScript' target='_blank'><span>typescript</span></a><span> 编写的 </span><a href='https://github.com/facebook/react' target='_blank'><span>react hooks</span></a><span>， 封装了 </span><a href='https://github.com/animate-css/animate.css' target='_blank'><span>animate.css</span></a></p><p><span>✨ Live Demo: </span><a href='https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx' target='_blank' class='url'>https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx</a></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/use-animate-css' target='_blank' class='url'>https://github.com/doublethinkio/use-animate-css</a></p><h3><a name="文章" class="md-header-anchor"></a><span>文章</span></h3><hr /><h4><a name="development-environment-manualhttpsgithubcomdoublethinkiodevelopment-environment-manual" class="md-header-anchor"></a><a href='https://github.com/doublethinkio/development-environment-manual'><span>development-environment-manual</span></a></h4><p><span>这是一份使用 </span><a href='https://www.microsoft.com/zh-hk/software-download/windows10' target='_blank'><span>windows</span></a><span> 系统包管理工具 </span><a href='https://github.com/lukesampson/scoop' target='_blank'><span>scoop</span></a><span> 搭建开发环境的教程, 特点是几乎所有操作都是通过纯命令行的方式去做的, 这意味着在 </span><a href='https://www.microsoft.com/zh-hk/software-download/windows10' target='_blank'><span>windows</span></a><span> 系统上也可以通过自动化脚本一键配置开发环境.</span></p><p><span>包括以下编程语言:</span></p><ul><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/c%2B%2B.md'><span>c/c++</span></a></li><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/golang.md'><span>golang</span></a></li><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/java.md'><span>java</span></a></li><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/javascript.md'><span>javascript</span></a></li><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/python.md'><span>python</span></a></li><li><a href='https://github.com/doublethinkio/development-environment-manual/blob/master/rust.md'><span>rust</span></a></li></ul><p><span>开发环境的搭建涉及四个方面, 软件安装, 环境变量, 编辑器, 等宽字体</span></p><p><span>软件安装方面, 使用 </span><a href='https://www.microsoft.com/zh-hk/software-download/windows10' target='_blank'><span>windows</span></a><span> 包管理工具 </span><a href='https://github.com/lukesampson/scoop' target='_blank'><span>scoop</span></a></p><p><span>通过包管理工具 </span><a href='https://github.com/lukesampson/scoop' target='_blank'><span>scoop</span></a><span> 下载安装软件将会自动处理软件依赖, 添加环境变量等琐碎事情</span></p><p><span>编辑器则推荐的开源编辑器 </span><a href='https://github.com/microsoft/vscode' target='_blank'><span>vscode</span></a></p><p><span>除此之外还推荐了支持 </span><a href='https://simple.wikipedia.org/wiki/Typographic_ligature' target='_blank'><span>ligatures</span></a><span> 的 </span><a href='https://en.wiktionary.org/wiki/monospace' target='_blank'><span>monospaced</span></a><span> 字体: </span><a href='https://github.com/tonsky/FiraCode' target='_blank'><span>FiraCode</span></a><span>, 对中文与 </span><a href='https://github.com/powerline/powerline' target='_blank'><span>powerline</span></a><span> 的支持都很好的:</span></p><p><span>项目链接: </span><a href='https://github.com/doublethinkio/development-environment-manual' target='_blank' class='url'>https://github.com/doublethinkio/development-environment-manual</a></p><h1><a name="致谢" class="md-header-anchor"></a><span>致谢</span></h1><p><span>感谢您花时间阅读我的简历，期待能有机会和您共事。</span></p></div>
 </body>
 </html>
