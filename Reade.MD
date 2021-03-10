@@ -201,8 +201,8 @@
 
 <!-- ![TC3.0 Marketing Site Prototype](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/C06u07I*SDss6n39zE3z8CpccUkdotODnkHqsLEoaYY!/r/dL8AAAAAAAAA) -->
 
-✅ 为 marketing site 添加 svg 动效
-✅ 为 topcoder 主页导航栏原型添加交互动画
+- 为 marketing site 添加 svg 动效
+- 为 topcoder 主页导航栏原型添加交互动画
 
 线上地址: https://www.topcoder.com/
 项目地址: https://gitlab.com/FloatingShuYin/tc3-marketing-site-prototype
@@ -211,7 +211,7 @@
 
 参与 topcoder 的 connect-app 项目开发
 
-✅ 使用 React 编写 [draft][] 编辑器的插件实现类似 [google docs][] 链接编辑模块的功能
+- 使用 React 编写 [draft][] 编辑器的插件实现类似 [google docs][] 链接编辑模块的功能
 
 线上地址: https://accounts.topcoder.com/connect/registration
 项目地址: https://github.com/doublethinkio/connect-app
