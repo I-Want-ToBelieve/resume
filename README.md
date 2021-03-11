@@ -163,15 +163,15 @@
 
 具体工作内容如下:
 
-- 使用 [create-react-app][] 脚手架创建项目, 并使用 [craco][] 自定义 .[create-react-app][] [webpack][] 等配置, 避免了 eject.
-- 配置 [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][] 以保障代码质量与规范 git commit message.主要是配置代码自动格式化, eslint 检查代码 [scss][].
+- 使用 [create-react-app][] 脚手架创建项目, 并使用 [craco][] 自定义 [create-react-app][] [webpack][] 等配置, 避免了 eject.
+- 配置 [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][] 以保障代码质量与规范 git commit message. 配置了 [vscode][] 编辑器 `"source.fixAll": true` 配合 [prettier][] 和 [eslint][] 实现保存代码自动格式化, 在提高代码质量的同时提高编码体验.
 - 编写 README 文档, 主要是写明了一些开发环境的需求(Requirements), 以及快速开始运行项目的步骤(Getting started), 还有就是推荐一些提升编程体验的编辑器插件(Enhance your development experience), 最后是 QA 部分会写明一些常见问题的解决办法, 比如包管理工具 [yarn][] 的淘宝镜像设置, 帮助新人快速融入到项目开发中.
 - 使用 [react-testing-library][] 和 [jest][] 编写前端路由的快照测试.
 - 配置 [webpack][] [postcss][] 插件, 使用 [purgecss][] 剔除未被使用的 css class，以减少编译后的 css 文件大小.
 - https 请求库选用支持 [node][] 与 promise 的 [axios][], [axios][] 还有拦截器插件机制, 通过编写拦截器很方便的实现了 [jsonwebtoken][] 的获取与自动续期.
 - 编写 useAxios hook, 并使用 [swr][] 增强 useAxios, 还使用 [react-hooks-testing-library][] 编写了 useAxios hook 测试.
 - 编写 loading 和 404 页面, 页面路由时 loading 使用的 react suspense fallback, 配合 `react.lazy` 异步加载页面, 优化页面请求大小.
-- 搜集资料做 react hooks 全局状态管理库的选型, 并输出了一篇[比对文章](https://floatsyi.com/2020/02/28/.Vegetarian-friendly-state-for-React-easy-peasy): 最终选用了 [easy-peasy].
+- 搜集资料做 react hooks 全局状态管理库的选型, 并输出了一篇[比对文章](https://floatsyi.com/2020/02/28/Vegetarian-friendly-state-for-React-easy-peasy): 最终选用了 [easy-peasy][].
 - [css-in-js][] 库的选型时参考 [awesome-css-in-js][] 后选用了 [emotion][].
 - 视频模态区的播放器组件使用 [videojs][], 进度条使用的 [react-compound-slider][], 并编写了 usePlayOrStop / usePlaybackRates/ useVideoQuality / useVideoTime /useVolume /useFFFR 等 hook.
 - form 组件和 form 验证选用 [formik][].
@@ -192,7 +192,6 @@
 
 - 编写 useRouter hook 实现配置式动态路由, 路由守卫等功能.
 - 配置 [webpack][] 插件 [mocker-api][].
-- 更新项目依赖项并跟进 Breaking changes.
 - ...
 
 #### TC3.0 Marketing Site Prototype
