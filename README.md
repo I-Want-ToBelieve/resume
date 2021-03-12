@@ -90,7 +90,7 @@
 - github: https://github.com/doublethinkio
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 三年
-- 期望职位: 前端开发工程师
+- 期望职位: 前端高级开发工程师/前端主管
 - 期望城市: 深圳
 - 期望薪资: 面谈
 - 当前状态: 在职
