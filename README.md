@@ -79,7 +79,7 @@
 [css3]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [javascript]: https://github.com/tc39/proposals
 [javascript(esnext)]: https://github.com/tc39/proposals
-
+[tailwindcss]: https://github.com/tailwindlabs/tailwindcss
 [zaza]: https://github.com/backtolife2021/zaza
 [lua]: https://github.com/lua/lua
 [lua-dev.nvim]: https://github.com/folke/lua-dev.nvim
@@ -149,7 +149,7 @@
 
 - 公司名称: 深圳观麦科技有限公司
 - 职位类型: 前端开发
-- 工作内容: 负责 erp 项目的进销存模块与 pc 端 electron 分拣软件的开发与维护
+- 工作内容: 负责面试、 erp 项目的进销存与分拣模块、以及 PC 端 electron 分拣软件的开发与维护
 - 在职时间: 2021.04 - 至今
 
 ---
@@ -167,14 +167,24 @@
 - 在职时间: 2018.06 - 2019.11
 
 # 项目与开源库
+### PC
+
+#### 分拣软件
+分拣软件 是一个桌面软件，可通过串口和蓝牙连接电子秤与电子秤通信，还可以连接打印机打印分拣标签是分拣系统的重要环节。
+
+技术栈方面使用 [electron][] & [react][] & [typescript][] & [mobx][].
+
+我使用 [html-react-parser
+][] 重构了打印页面模块，接入了 [react][] 生态， 解决了在单个 html 文件里开发导致的许多问题，并使用 promise 队列解决打印过快时打印机漏打的问题。
 
 ### Web
+
 
 ---
 #### 分拣系统 ERP
 分拣系统 ERP 是一个将物流、财流、信息流集成化管理的应用系统，包含采购、销售、库存、客户、财务等模块.
 
-技术栈方面使用 [gm-react-app][] & [react hooks][] & [typescript][] & [taiwindcss][] & [react-router][] & [mobx][].
+技术栈方面使用 [gm-react-app][] & [react hooks][] & [typescript][] & [tailwindcss][] & [react-router][] & [mobx][].
 
 主要负责 erp 项目的进销存模块需求评审，开发以及维护。
 
