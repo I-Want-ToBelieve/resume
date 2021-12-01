@@ -80,6 +80,14 @@
 [javascript]: https://github.com/tc39/proposals
 [javascript(esnext)]: https://github.com/tc39/proposals
 
+[zaza]: https://github.com/backtolife2021/zaza
+[lua]: https://github.com/lua/lua
+[lua-dev.nvim]: https://github.com/folke/lua-dev.nvim
+[neovim]: https://github.com/neovim/neovim
+[vim-lsp]: https://github.com/prabirshrestha/vim-lsp
+[builtin-docs.json]: https://github.com/iamcco/vim-language-server/blob/10a9ae92d5b00da86eaf100e1b062ab7201dfdcc/src/docs/builtin-docs.json
+[python]: https://www.python.org/
+
 此简历在线地址: https://floatsyi.com/resume/
 
 # 个人信息
@@ -89,7 +97,7 @@
 - 博客: https://floatsyi.com
 - github: https://github.com/doublethinkio
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
-- 工作经验: 三年
+- 工作经验: 四年
 - 期望职位: 前端高级开发工程师/前端主管/前端讲师
 - 期望城市: 深圳
 - 期望薪资: 面谈
@@ -134,6 +142,14 @@
 
 # 工作经历
 
+
+- 公司名称: 深圳观麦科技有限公司
+- 职位类型: 前端开发
+- 工作内容: 负责 erp 项目的进销存模块与 pc 端 electron 分拣软件的开发与维护
+- 在职时间: 2021.04 - 至今
+
+---
+
 - 公司名称: 西安猫兜灵智能科技有限公司
 - 职位类型: 前端主管
 - 工作内容: 框架选型，脚手架搭建，组件开发，前端自动化测试
@@ -151,6 +167,12 @@
 ### Web
 
 ---
+#### 分拣系统 ERP
+分拣系统 ERP 是一个将物流、财流、信息流集成化管理的应用系统，包含采购、销售、库存、客户、财务等模块.
+
+技术栈方面使用 [gm-react-app][] & [react hooks][] & [typescript][] & [taiwindcss][] & [react-router][] & [mobx][].
+
+主要负责 erp 项目的进销存模块需求评审，开发以及维护。
 
 #### 学习观
 
@@ -218,6 +240,20 @@
 <!-- ![connect-app](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA) -->
 
 ### 开源库
+
+#### zaza
+
+[zaza][] 是一个使用 [typescript][] 来编写 [neovim][] 配置的项目。
+
+[neovim][] 现已支持使用 lua 来编写配置， 而 [typescripttolua][] 则可以将 [typescript][] 代码转换为 [lua][] 代码， 因此使用 [typescript][] 来编写 [neovim][] 配置是可能的。
+
+如果要使用 [typescript][] 来编写 [neovim][] 配置， 首先要做的就是要提供 [neovim][] [lua][] api 的类型文件。
+此处参考 [lua-dev][] 的[做法](https://github.com/folke/lua-dev.nvim#-how) ， 从 [neovim][] 获取到  message pack 文件， 并从 [vim-lsp][] 获取到 [builtin-docs.json][] 文件， 这些文件描述了 [neovim][] 的 [lua][] api， 我们可以将其作为输入， 通过 [typescript][] 的编译器 api 生成并输出 d.ts 文件。
+
+message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clone neovim 然后执行生成 message pack 的 [python][] 脚本， 最后将生成的 message pack 导出 [docker][] 到宿主机即可。
+由于  message pack 与 [builtin-docs.json][] 描述的信息不全面， 因此生成的  [neovim][] [lua][] api 的函数参数类型多为 any， 需要人工的在此基础上对常用 api 做一层封装，提供类型安全的便捷的上层 api 。
+
+
 
 ---
 
