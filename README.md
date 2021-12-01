@@ -91,6 +91,8 @@
 [fish]: https://github.com/fish-shell/fish-shell
 [typescripttolua]: https://github.com/TypeScriptToLua/TypeScriptToLua
 [mobx]: https://github.com/mobxjs/mobx
+[html-react-parser]: https://github.com/remarkablemark/html-react-parser
+[gm-react-app]: https://github.com/gmfe/gm-react-app
 
 此简历在线地址: https://floatsyi.com/resume/
 
@@ -102,7 +104,7 @@
 - github: https://github.com/doublethinkio
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
-- 期望职位: 前端高级开发工程师/前端主管/前端讲师
+- 期望职位: 前端高级开发工程师
 - 期望城市: 深圳
 - 期望薪资: 面谈
 - 当前状态: 在职
@@ -155,7 +157,7 @@
 ---
 
 - 公司名称: 西安猫兜灵智能科技有限公司
-- 职位类型: 前端主管
+- 职位类型: 前端组长
 - 工作内容: 框架选型，脚手架搭建，组件开发，前端自动化测试
 - 在职时间: 2019.12 - 2020.12
 
