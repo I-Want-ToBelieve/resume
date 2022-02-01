@@ -36,7 +36,7 @@
 [git]: https://github.com/git/git
 [zsh]: https://github.com/zsh-users/zsh
 [windows-terminal]: https://github.com/microsoft/terminal
-[st]: https://github.com/doublethinkio/st
+[st]: https://github.com/backtolife2021/st
 [markdown]: https://github.com/commonmark/commonmark-spec
 [typescript]: https://github.com/microsoft/TypeScript
 [pug]: https://github.com/pugjs/pug
@@ -51,7 +51,7 @@
 [scoop]: https://github.com/lukesampson/scoop
 [choco]: https://github.com/chocolatey/choco
 [archlinux]: https://github.com/archlinux
-[mac]: https://www.apple.com.cn/mac
+[macOS]: https://www.apple.com.cn/mac
 [windows 10]: https://www.microsoft.com/zh-hk/software-download/windows10
 [windows]: https://www.microsoft.com/zh-hk/software-download/windows10
 [css-in-js]: https://github.com/MicheleBertoli/css-in-js
@@ -74,7 +74,7 @@
 [react-spring]: https://github.com/pmndrs/react-spring
 [react-use-gesture]: https://github.com/pmndrs/react-use-gesture
 [animate.css]: https://github.com/animate-css/animate.css
-[use-animate-css]: https://github.com/doublethinkio/use-animate-css
+[use-animate-css]: https://github.com/backtolife2021/use-animate-css
 [html5]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
 [css3]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [javascript]: https://github.com/tc39/proposals
@@ -92,7 +92,11 @@
 [typescripttolua]: https://github.com/TypeScriptToLua/TypeScriptToLua
 [mobx]: https://github.com/mobxjs/mobx
 [html-react-parser]: https://github.com/remarkablemark/html-react-parser
+[docker]: https://github.com/docker
 [gm-react-app]: https://github.com/gmfe/gm-react-app
+[java]: https://github.com/topics/java
+[android studio]: https://developer.android.com/studio/
+[SerialPortHelper]: https://github.com/freyskill/SerialPortHelper
 
 此简历在线地址: https://floatsyi.com/resume/
 
@@ -101,7 +105,7 @@
 - 喻智勇/男/1998
 - 学历: 大专 (计算机科学与技术)
 - 博客: https://floatsyi.com
-- github: https://github.com/doublethinkio
+- github: https://github.com/backtolife2021
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
 - 期望职位: 前端高级开发工程师
@@ -119,27 +123,28 @@
 - 脚手架: [create-react-app][] & [vue-cli][]
 - 工程化: [webpack][] & [babel][]
 - 单元测试: [jest][] & [react-hooks-testing-library][]
-- 跨端开发框架: [taro][]
-- 编辑器: [vscode][] & [neovim][]
+- 编辑器: [vscode][] & [neovim][] & [android studio][]
 - 代码规范: [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][]
 - 文档: [markdown][]
 - 版本管理: [git][]
 - 包管理工具: [npm][] & [yarn][] & [scoop][] & [choco][] & [pip][] & [cargo][] & [pacman][] & [yay][]
-- 操作系统: [windows 10][] & [wsl][] & [archlinux][] & [mac][]
+- 操作系统: [macOS][] & [archlinux][] & [windows 10][] & [wsl][]
 - 终端: [windows-terminal][] & [kitty][]
 - shell: [zsh][] & [fish][]
 
 以下为我了解的技术栈
 
 - 微前端: [qiankun][]
+- 跨端开发框架: [taro][]
 - 跨平台桌面应用框架: [electron][] & [react.node-gui][]
 - webassembly: [rust][] [wasm-pack][]
+- 原生移动端: [java][]
 
 更多可能(我对我的技术栈没有限制，因为看完文档都能写)
 
 # 个人优势
 
-自学前端并积累了整套前端自学资源, 正在兼职带徒, 五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，gitlab 私服搭建， 还能写得一手同事都夸赞的干净代码。
+自学前端并积累了整套前端自学资源, 正在带徒, 五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，gitlab 私服搭建， 还能写得一手同事都夸赞的干净代码。
 
 # 联系方式
 
@@ -151,7 +156,7 @@
 
 - 公司名称: 深圳观麦科技有限公司
 - 职位类型: 前端开发
-- 工作内容: 负责面试、 erp 项目的进销存与分拣模块、以及 PC 端 electron 分拣软件的开发与维护
+- 工作内容: 负责面试、 erp 项目的进销存与分拣模块、以及 PC 端 electron 和安卓端分拣软件的开发与维护，
 - 在职时间: 2021.04 - 至今
 
 ---
@@ -169,22 +174,29 @@
 - 在职时间: 2018.06 - 2019.11
 
 # 项目与开源库
-### PC
 
+### 移动端
+---
 #### 分拣软件
-分拣软件 是一个桌面软件，可通过串口和蓝牙连接电子秤与电子秤通信，还可以连接打印机打印分拣标签是分拣系统的重要环节。
+
+春节前一周临时收到一位移动端分拣软件客户的智崎电子秤无法适配的问题，我根据官方文档快速上手 [java][] 并安装了 [android studio][] 更换串口通信库为　[SerialPortHelper][]　后重新打包 apk 完成了分拣软件安卓端对智崎电子秤的适配，获得了客户的好评!
+
+### PC
+---
+#### 分拣软件
+分拣软件 是一个桌面软件，可通过串口和蓝牙连接电子秤与电子秤通信，还可以连接打印机打印分拣标签.
+分拣是整个 ERP 系统的重要环节.
 
 技术栈方面使用 [electron][] & [react][] & [typescript][] & [mobx][].
 
-我使用 [html-react-parser
-][] 重构了打印页面模块，接入了 [react][] 生态， 解决了在单个 html 文件里开发导致的许多问题，并使用 promise 队列解决打印过快时打印机漏打的问题。
+我使用 [html-react-parser][] 重构了打印页面模块，接入了 [react][] 生态， 解决了在单个 html 文件里开发导致的许多问题，并使用 promise 队列解决打印过快时打印机漏打的问题。
 
 ### Web
 
 
 ---
-#### 分拣系统 ERP
-分拣系统 ERP 是一个将物流、财流、信息流集成化管理的应用系统，包含采购、销售、库存、客户、财务等模块.
+#### 观麦 ERP
+观麦 ERP 是一个将物流、财流、信息流集成化管理的应用系统，包含采购、销售、库存、客户、财务等模块.
 
 技术栈方面使用 [gm-react-app][] & [react hooks][] & [typescript][] & [tailwindcss][] & [react-router][] & [mobx][].
 
@@ -251,7 +263,7 @@
 - 使用 React 编写 [draft][] 编辑器的插件实现类似 [google docs][] 链接编辑模块的功能
 
 线上地址: https://accounts.topcoder.com/connect/registration
-项目地址: https://github.com/doublethinkio/connect-app
+项目地址: https://github.com/backtolife2021/connect-app
 
 <!-- ![connect-app](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA) -->
 
@@ -261,7 +273,7 @@
 
 [zaza][] 是一个使用 [typescript][] 来编写 [neovim][] 配置的项目。
 
-[neovim][] 现已支持使用 lua 来编写配置， 而 [typescripttolua][] 则可以将 [typescript][] 代码转换为 [lua][] 代码， 因此使用 [typescript][] 来编写 [neovim][] 配置是可能的。
+[neovim][] 现已支持使用 [lua][] 来编写配置， 而 [typescripttolua][] 则可以将 [typescript][] 代码转换为 [lua][] 代码， 因此使用 [typescript][] 来编写 [neovim][] 配置是可能的。
 
 如果要使用 [typescript][] 来编写 [neovim][] 配置， 首先要做的就是要提供 [neovim][] [lua][] api 的类型文件。
 此处参考 [lua-dev.nvim][] 的[做法](https://github.com/folke/lua-dev.nvim#-how) ， 从 [neovim][] 获取到  message pack 文件， 并从 [vim-lsp][] 获取到 [builtin-docs.json][] 文件， 这些文件描述了 [neovim][] 的 [lua][] api， 我们可以将其作为输入， 通过 [typescript][] 的编译器 api 生成并输出 d.ts 文件。
@@ -279,24 +291,24 @@ message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clo
 
 ✨ Live Demo: https://codesandbox.io/s/useanimatecss-tyklw?file=/src/A.tsx
 
-项目链接: https://github.com/doublethinkio/use-animate-css
+项目链接: https://github.com/backtolife2021/use-animate-css
 
 ### 文章
 
 ---
 
-#### [development-environment-manual](https://github.com/doublethinkio/development-environment-manual)
+#### [development-environment-manual](https://github.com/backtolife2021/development-environment-manual)
 
-这是一份使用 [windows][] 系统包管理工具 [scoop][] 搭建开发环境的教程, 特点是几乎所有操作都是通过纯命令行的方式去做的, 这意味着在 [windows][] 系统上也可以通过自动化脚本一键配置开发环境.
+这是一篇使用 [windows][] 系统包管理工具 [scoop][] 搭建开发环境的教程, 特点是几乎所有操作都是通过纯命令行的方式去做的, 这意味着在 [windows][] 系统上也可以通过自动化脚本一键配置开发环境.
 
 包括以下编程语言:
 
-- [c/c++](https://github.com/doublethinkio/development-environment-manual/blob/master/c%2B%2B.md)
-- [golang](https://github.com/doublethinkio/development-environment-manual/blob/master/golang.md)
-- [java](https://github.com/doublethinkio/development-environment-manual/blob/master/java.md)
-- [javascript](https://github.com/doublethinkio/development-environment-manual/blob/master/javascript.md)
-- [python](https://github.com/doublethinkio/development-environment-manual/blob/master/python.md)
-- [rust](https://github.com/doublethinkio/development-environment-manual/blob/master/rust.md)
+- [c/c++](https://github.com/backtolife2021/development-environment-manual/blob/master/c%2B%2B.md)
+- [golang](https://github.com/backtolife2021/development-environment-manual/blob/master/golang.md)
+- [java](https://github.com/backtolife2021/development-environment-manual/blob/master/java.md)
+- [javascript](https://github.com/backtolife2021/development-environment-manual/blob/master/javascript.md)
+- [python](https://github.com/backtolife2021/development-environment-manual/blob/master/python.md)
+- [rust](https://github.com/backtolife2021/development-environment-manual/blob/master/rust.md)
 
 开发环境的搭建涉及四个方面, 软件安装, 环境变量, 编辑器, 等宽字体
 
@@ -308,7 +320,7 @@ message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clo
 
 除此之外还推荐了支持 [ligatures][] 的 [monospaced][] 字体: [FiraCode][], 对中文与 [powerline][] 的支持都很好的:
 
-项目链接: https://github.com/doublethinkio/development-environment-manual
+项目链接: https://github.com/backtolife2021/development-environment-manual
 
 # 致谢
 
