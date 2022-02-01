@@ -262,7 +262,7 @@
 
 [zaza][] 是一个使用 [typescript][] 来编写 [neovim][] 配置的项目。
 
-[neovim][] 现已支持使用 lua 来编写配置， 而 [typescripttolua][] 则可以将 [typescript][] 代码转换为 [lua][] 代码， 因此使用 [typescript][] 来编写 [neovim][] 配置是可能的。
+[neovim][] 现已支持使用 [lua][] 来编写配置， 而 [typescripttolua][] 则可以将 [typescript][] 代码转换为 [lua][] 代码， 因此使用 [typescript][] 来编写 [neovim][] 配置是可能的。
 
 如果要使用 [typescript][] 来编写 [neovim][] 配置， 首先要做的就是要提供 [neovim][] [lua][] api 的类型文件。
 此处参考 [lua-dev.nvim][] 的[做法](https://github.com/folke/lua-dev.nvim#-how) ， 从 [neovim][] 获取到  message pack 文件， 并从 [vim-lsp][] 获取到 [builtin-docs.json][] 文件， 这些文件描述了 [neovim][] 的 [lua][] api， 我们可以将其作为输入， 通过 [typescript][] 的编译器 api 生成并输出 d.ts 文件。
