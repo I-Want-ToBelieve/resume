@@ -97,6 +97,16 @@
 [java]: https://github.com/topics/java
 [android studio]: https://developer.android.com/studio/
 [SerialPortHelper]: https://github.com/freyskill/SerialPortHelper
+[rollup]: https://github.com/rollup/rollup
+[esbuild]: https://github.com/evanw/esbuild
+[swc]: https://github.com/swc-project/swc
+[vite]: https://github.com/vitejs/vite
+[rollup-plugin-typescript2]: https://github.com/ezolenko/rollup-plugin-typescript2
+[tsc-alias]: https://github.com/justkey007/tsc-alias#readme
+[emp]: https://github.com/efoxTeam/emp
+[linux]: https://github.com/torvalds/linux
+[gitlab]: https://about.gitlab.com/
+[swagger]: https://github.com/OAI/OpenAPI-Specification
 
 此简历在线地址: https://floatsyi.com/resume/
 
@@ -109,7 +119,7 @@
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
 - 期望职位: 前端高级开发工程师
-- 期望城市: 深圳
+- 期望城市: 深圳/广州
 - 期望薪资: 面谈
 
 
@@ -118,33 +128,34 @@
 以下为我熟悉的技术栈(使用 react hooks 较多):
 
 - 基础: [html5][] & [css3][] & [javascript(esnext)][] & [node-lts][]
-- 预编译语言: [typescript][] & [scss][] & [pug][]
+- 预编译语言: [typescript][] & [scss][]
 - 前端库: [react hooks][] & [vue-next][]
 - 脚手架: [create-react-app][] & [vue-cli][]
-- 工程化: [webpack][] & [babel][]
+- 打包工具: [webpack][] & [rollup][] & [vite][]
+- 编译器：[babel][] ＆　[esbuild][] ＆ [swc][]
 - 单元测试: [jest][] & [react-hooks-testing-library][]
 - 编辑器: [vscode][] & [neovim][] & [android studio][]
 - 代码规范: [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][]
-- 文档: [markdown][]
+- 文档: [markdown][] & [swagger][]
 - 版本管理: [git][]
-- 包管理工具: [npm][] & [yarn][] & [scoop][] & [choco][] & [pip][] & [cargo][] & [pacman][] & [yay][]
+- 包管理工具: [npm][] & [yarn][] & [scoop][] & [choco][] & [pip][] & [cargo][] & [pacman][] & [paru][]
 - 操作系统: [macOS][] & [archlinux][] & [windows 10][] & [wsl][]
 - 终端: [windows-terminal][] & [kitty][]
 - shell: [zsh][] & [fish][]
 
 以下为我了解的技术栈
 
-- 微前端: [qiankun][]
+- 微前端: [qiankun][] & [emp][]
 - 跨端开发框架: [taro][]
 - 跨平台桌面应用框架: [electron][] & [react.node-gui][]
-- webassembly: [rust][] [wasm-pack][]
+- webassembly: [rust][] & [wasm-pack][]
 - 原生移动端: [java][]
 
 更多可能(我对我的技术栈没有限制，因为看完文档都能写)
 
 # 个人优势
 
-自学前端并积累了整套前端自学资源, 正在带徒, 五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，gitlab 私服搭建， 还能写得一手同事都夸赞的干净代码。
+自学前端并积累了整套前端自学资源, 五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建，日常使用 [linux][] 系统开发，还能写得一手同事都夸赞的干净代码。
 
 # 联系方式
 
@@ -156,21 +167,21 @@
 - 公司名称: 深圳十方融海科技有限公司
 - 职位类型: 前端开发
 - 工作内容: 负责 erp 中台， 用户数据可视化中台的开发与维护
-- 在职时间: 2022.03 - 至今
+- 在职时间: 2022.03 - 2022.08
 
 ---
 
 - 公司名称: 深圳观麦科技有限公司
 - 职位类型: 前端开发
 - 工作内容: 负责面试、 erp 项目的进销存与分拣模块、以及 PC 端 electron 和安卓端分拣软件的开发与维护，
-- 在职时间: 2021.04 - 2022.03
+- 在职时间: 2021.03 - 2022.02
 
 ---
 
 - 公司名称: 西安猫兜灵智能科技有限公司
 - 职位类型: 前端组长
 - 工作内容: 框架选型，脚手架搭建，组件开发，前端自动化测试
-- 在职时间: 2019.12 - 2020.12
+- 在职时间: 2019.12 - 2021.02
 
 ---
 
@@ -180,6 +191,29 @@
 - 在职时间: 2018.06 - 2019.11
 
 # 项目与开源库
+
+### 基础库
+
+#### @sfe/video-player
+
+@sfe/video-player 是从中台和 C 端抽离出来的基于 h5 video 标签的自研播放器。
+
+我主要处理了离职员工遗留的大量的 [typescript][] 类型错误和 bug。
+
+- 修复了 package.json 未声明 type 字段导致引用改库的项目类型报错问题。
+- 修复了自动播放功能
+- 修复了弹窗点击事件冒牌导致的进度条响应了该事件回退进度的问题
+- 修复了播放器控制栏 DOM 层级错误导致的错误的层叠上下文问题。
+- 添加了全屏和倍速功能
+- 使用 [rollup][] 和 [rollup-plugin-typescript2][] 对该库打包，并使用 [tsc-alias][] 修复了类型导入路径的别名问题
+- 配置 [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][] 以保障代码质量与规范 git commit message. 配置了 [vscode][] 编辑器 `"source.fixAll": true` 配合 [prettier][] 和 [eslint][] 实现保存代码自动格式化, 在提高代码质量的同时提高编码体验.
+
+#### @sfe-core
+@sfe-core 是中台和 C 端的前端基础建设库，包括编译构建和 api 生成等基础功能。
+
+- 修复了根据 [swagger][] 生成 [typescript][] 接口函数时无法处理多维数组的 bug
+- 升级　[eslint][] 和 [prettier][] 以及 [typescript][] 和 [swc][] 以支持更新的 esnext 语法
+- 添加了接口路由根据请求接口对新老 axios 实例进行派发，实现了渐进式的接口迁移
 
 ### 移动端
 ---
