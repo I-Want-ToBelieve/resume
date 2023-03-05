@@ -108,8 +108,6 @@
 [gitlab]: https://about.gitlab.com/
 [swagger]: https://github.com/OAI/OpenAPI-Specification
 
-此简历在线地址: https://floatsyi.com/resume/
-
 # 个人信息
 
 - 喻智勇/男/1998
