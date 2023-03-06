@@ -107,13 +107,20 @@
 [linux]: https://github.com/torvalds/linux
 [gitlab]: https://about.gitlab.com/
 [swagger]: https://github.com/OAI/OpenAPI-Specification
+[nixos]: https://github.com/NixOS
+[nix]: https://github.com/NixOS/nix
+[nixlang]: https://github.com/NixOS/nix
+[pnpm]: https://github.com/pnpm/pnpm
+[wezterm]: https://github.com/wez/wezterm
+
+此简历在线 web 版本: https://i-want-tobelieve.github.io/resume/
 
 # 个人信息
 
 - 喻智勇/男/1998
-- 学历: 大专 (计算机科学与技术)
-- 博客: https://floatsyi.com
-- github: https://github.com/backtolife2021
+- 学历: 大专 (西安交通大学计算机科学与技术)
+- 博客: http://i-want-tobelieve.github.io/
+- github: https://github.com/i-want-tobelieve
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
 - 期望职位: 前端高级开发工程师
@@ -129,6 +136,7 @@
 - 预编译语言: [typescript][] & [scss][]
 - 前端库: [react hooks][] & [vue-next][]
 - 脚手架: [create-react-app][] & [vue-cli][]
+- 跨平台桌面应用框架: [electron][]
 - 打包工具: [webpack][] & [rollup][] & [vite][]
 - 编译器：[babel][] ＆　[esbuild][] ＆ [swc][]
 - 单元测试: [jest][] & [react-hooks-testing-library][]
@@ -136,24 +144,25 @@
 - 代码规范: [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][]
 - 文档: [markdown][] & [swagger][]
 - 版本管理: [git][]
-- 包管理工具: [npm][] & [yarn][] & [scoop][] & [choco][] & [pip][] & [cargo][] & [pacman][] & [paru][]
-- 操作系统: [macOS][] & [archlinux][] & [windows 10][] & [wsl][]
-- 终端: [windows-terminal][] & [kitty][]
+- 包管理工具:[npm][] & [yarn][] & [pnpm][] & [nix][] & [scoop][] & [cargo][] & [pacman][] & [paru][]
+- 操作系统: [archlinux][] & [nixos][] & [macOS][] & [windows 11][] & [wsl][]
+- 终端: [windows-terminal][] & [kitty][] & [wezterm][]
 - shell: [zsh][] & [fish][]
 
 以下为我了解的技术栈
 
+- 系统级开发: [rust][]
 - 微前端: [qiankun][] & [emp][]
-- 跨端开发框架: [taro][]
-- 跨平台桌面应用框架: [electron][] & [react.node-gui][]
-- webassembly: [rust][] & [wasm-pack][]
+- 小程序开发框架: [taro][]
+- 跨平台桌面应用框架: [react.node-gui][]
+- webassembly: [wasm-pack][]
 - 原生移动端: [java][]
 
 更多可能(我对我的技术栈没有限制，因为看完文档都能写)
 
 # 个人优势
 
-自学前端并积累了整套前端自学资源, 五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建，日常使用 [linux][] 系统开发，还能写得一手同事都夸赞的干净代码。
+自学前端并积累了整套前端自学资源, 会基础的后端开发。五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建，日常使用 [linux][] 系统开发，还能写得一手同事都夸赞的干净代码。
 
 # 联系方式
 
