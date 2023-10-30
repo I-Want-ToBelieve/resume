@@ -112,6 +112,13 @@
 [nixlang]: https://github.com/NixOS/nix
 [pnpm]: https://github.com/pnpm/pnpm
 [wezterm]: https://github.com/wez/wezterm
+[bun]: https://github.com/oven-sh/bun
+[tauri]: https://github.com/tauri-apps/tauri
+[localsend]: https://github.com/localsend/localsend
+[autohide-tdrop]: https://github.com/I-Want-ToBelieve/autohide-tdrop
+[flutter]: https://github.com/flutter/flutter
+[uefi]: https://github.com/tianocore/edk2
+[grub]: https://github.com/rhboot/grub2
 
 此简历在线 web 版本: https://i-want-tobelieve.github.io/resume/
 
@@ -123,7 +130,7 @@
 - github: https://github.com/i-want-tobelieve
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
-- 期望职位: 前端高级开发工程师
+- 期望职位: 前端组长/前端高级工程师
 - 期望城市: 深圳/广州
 - 期望薪资: 面谈
 
@@ -138,31 +145,31 @@
 - 脚手架: [create-react-app][] & [vue-cli][]
 - 跨平台桌面应用框架: [electron][]
 - 打包工具: [webpack][] & [rollup][] & [vite][]
-- 编译器：[babel][] ＆　[esbuild][] ＆ [swc][]
+- 编译器:[babel][] ＆　[esbuild][] ＆ [swc][]
 - 单元测试: [jest][] & [react-hooks-testing-library][]
 - 编辑器: [vscode][] & [neovim][] & [android studio][]
 - 代码规范: [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][]
 - 文档: [markdown][] & [swagger][]
 - 版本管理: [git][]
-- 包管理工具:[npm][] & [yarn][] & [pnpm][] & [nix][] & [scoop][] & [cargo][] & [pacman][] & [paru][]
-- 操作系统: [archlinux][] & [nixos][] & [macOS][] & [windows 11][] & [wsl][]
+- 包管理工具:[npm][] & [yarn][] & [pnpm][] & [bun][] & [nix][] & [scoop][] & [cargo][] & [pacman][] & [paru][]
+- 操作系统:[nixos][]&   [archlinux][] & [macos][] & [windows][] & [wsl][]
 - 终端: [windows-terminal][] & [kitty][] & [wezterm][]
-- shell: [zsh][] & [fish][]
+- shell: [zsh][] & [fish][] 
 
 以下为我了解的技术栈
 
 - 系统级开发: [rust][]
 - 微前端: [qiankun][] & [emp][]
-- 小程序开发框架: [taro][]
-- 跨平台桌面应用框架: [react.node-gui][]
+- 小程序开发框架: [taro][] & [tauri][]
+- 跨平台桌面应用框架: [react.node-gui][] & [tauri][]
 - webassembly: [wasm-pack][]
 - 原生移动端: [java][]
 
-更多可能(我对我的技术栈没有限制，因为看完文档都能写)
+更多可能(我对我的技术栈没有限制，因为看完文档都能写的很好)
 
 # 个人优势
 
-自学前端并积累了整套前端自学资源, 会基础的后端开发。五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建，日常使用 [linux][] 系统开发，还能写得一手同事都夸赞的干净代码。
+自学前端并积累了整套前端自学资源, 会基础的后端开发。五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建, 可以配置各种脚手架提高组员开发效率和开发体验,日常使用 [linux][] 发行版声明式系统 [nixos][] 进行开发, 并业余从事 [nixos][] 开源社区的建设, 熟悉函数式编程理念，写得一手同事都夸赞的干净代码。
 
 # 联系方式
 
@@ -314,7 +321,33 @@
 
 <!-- ![connect-app](http://r.photo.store.qq.com/psb?/V12iDrZG1mzmnh/wrc4z6zDDNV8VimyuRFO2Clyfl4hcFrMqA7XKFd*FLE!/r/dL4AAAAAAAAA) -->
 
-### 开源库
+### 开源项目
+
+#### devos
+
+[devos][] 是构建我的 [nixos][] 系统的 [nix][] 代码的所在地. [nixos][] 是一个 [linux][] 发行版，特点是使用图灵完备的函数式语言 [nix ][]来编写和构建属于你自己的声明式操作系统. 
+
+而 [nix][] 是一款适用于 [linux][] 和其他 [unix][] 系统的强大包管理器，使包管理变得可靠且可重复.
+
+想象一下,一个通过 [uefi][] 和 [grub][] 引导的运行在 [linux][] 内核上的现代操作系统的构成部分，从黑色背景的 [tty][],到登录管理器然后是桌面环境，桌面环境的 [shells][]，[trays][]，[docks][]，[themes][]，[widgets][], [ime][] 以及日常开发使用的所有软件开发工具以及它们的配置项都以声明式的文本代码形式编写并组织在一个 [git][] 仓库中, 它们大多是 [foss][] 的, 并且拥有与你的 [cpu arch][] 兼容的二进制源, 其余的则从各种 [git][] 源拉取源代码, 你只需要输入一行命令，从代码中声明的一切，下到磁盘分区，上到桌面主题，它们由各式各样的编程语言编写，使用各式各样的编译器，在此刻都编译并构建为你自己声明的操作系统.
+
+#### localsend
+
+[localsend][] 是使用 flutter 框架编写 airdrop 的开源跨平台替代品, 可以运行在 android ios mac windows linux 多个平台上，以在局域网中互传文件.
+
+[flutter][] 继承了 gtk 长期存在的问题，gtk 拒绝提供合理的默认值，并且拒绝最终用户调整，并将责任交给软件开发者.  目前使用 gtk 的软件将默认使用客户端装饰。 
+
+这对一些运行在 wayland 合成器上拥有服务器窗口装饰的桌面环境来说会带来一些不一致性，我对此进行了修复.
+
+#### autohide-tdrop
+
+[autohide-tdrop][] 
+
+终端是我们开发过程中必不可少的工具，而一个通过快捷键打开的可自动隐藏的下拉式终端则可以提高我们在开发过程中频繁的从其他软件中切换的效率
+
+autohide-tdrop 是一个使用 [rust][] 实现的命令行程序，通过监听 [x11][] 服务器发出的焦点切换事件来自动隐藏 [tdrop][] 管理的窗口, 可以在失去焦点时自动隐藏终端或由 [tdrop][] 管理的其他应用程序. 
+
+支持 [x11][] 和 [wayland][] 下的 [xwayland][].
 
 #### zaza
 
@@ -326,11 +359,7 @@
 此处参考 [lua-dev.nvim][] 的[做法](https://github.com/folke/lua-dev.nvim#-how) ， 从 [neovim][] 获取到  message pack 文件， 并从 [vim-lsp][] 获取到 [builtin-docs.json][] 文件， 这些文件描述了 [neovim][] 的 [lua][] api， 我们可以将其作为输入， 通过 [typescript][] 的编译器 api 生成并输出 d.ts 文件。
 
 message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clone neovim 然后执行生成 message pack 的 [python][] 脚本， 最后将生成的 message pack 导出 [docker][] 到宿主机即可。
-由于  message pack 与 [builtin-docs.json][] 描述的信息不全面， 因此生成的  [neovim][] [lua][] api 的函数参数类型多为 any， 需要人工的在此基础上对常用 api 做一层封装，提供类型安全的便捷的上层 api 。
-
-
-
----
+由于 message pack 与 [builtin-docs.json][] 描述的信息不全面， 因此生成的  [neovim][] [lua][] api 的函数参数类型多为 any， 需要人工的在此基础上对常用 api 做一层封装，提供类型安全的便捷的上层 api 。
 
 #### use-animate-css
 
@@ -365,7 +394,7 @@ message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clo
 
 编辑器则推荐的开源编辑器 [vscode][]
 
-除此之外还推荐了支持 [ligatures][] 的 [monospaced][] 字体: [FiraCode][], 对中文与 [powerline][] 的支持都很好的:
+除此之外还推荐了支持 [ligatures][] 的 [monospaced][] 字体: [firacode][], 对中文与 [powerline][] 的支持都很好的:
 
 项目链接: https://github.com/backtolife2021/development-environment-manual
 
@@ -377,3 +406,21 @@ message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clo
 [powerline]: https://github.com/powerline/powerline
 [monospaced]: https://en.wiktionary.org/wiki/monospace
 [ligatures]: https://simple.wikipedia.org/wiki/Typographic_ligature
+[nix ]: https://github.com/NixOS/nix
+[shells]: https://en.wikipedia.org/wiki/Shell_%28computing%29
+[trays]: https://wiki.trinitydesktop.org/System_Tray
+[docks]: https://en.wikipedia.org/wiki/Dock_(macOS)
+[themes]: https://en.wikipedia.org/wiki/Theme_(computing)
+[widgets]: https://github.com/elkowar/eww
+[ime]: https://en.wikipedia.org/wiki/Input_method
+[foss]: https://itsfoss.com/what-is-foss/
+[cpu arch]: https://www.kernel.org/doc/html/latest/arch/index.html
+[devos]: https://github.com/I-Want-ToBelieve/devos
+[gtk]: https://github.com/GNOME/gtk
+[xwayland]: https://wayland.freedesktop.org/xserver.html
+[wayland]: https://wayland.freedesktop.org/
+[x11]: https://github.com/mirror/libX11
+[tdrop]: https://github.com/noctuid/tdrop
+[unix]: https://en.wikipedia.org/wiki/Unix
+[tty]: https://en.wikipedia.org/wiki/Tty_(Unix)
+[windows 11]: 
