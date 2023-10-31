@@ -120,7 +120,7 @@
 [uefi]: https://github.com/tianocore/edk2
 [grub]: https://github.com/rhboot/grub2
 
-此简历在线 web 版本: https://i-want-tobelieve.github.io/resume/
+此简历在线 web 版本: https://iwantobelieve.netlify.app
 
 # 个人信息
 
