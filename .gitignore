@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,vue,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vue,direnv
 
+.pre-commit-config.yaml
+
 ### devenv ###
 .devenv
 
