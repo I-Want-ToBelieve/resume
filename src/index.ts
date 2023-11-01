@@ -13,6 +13,14 @@ try {
     $("#webfonts").remove();
   }
 
+    if ($('#gtagjs').length !== 0) {
+      $('#gtagjs').remove()
+    }
+
+    if ($('#gtagjscode').length !== 0) {
+      $('#gtagjscode').remove()
+    }
+
   $("head").prepend(
     `
         <style id="webfonts">
@@ -36,6 +44,18 @@ try {
       </style>
     `,
   );
+
+  $('body').append(`
+    <!-- Google tag (gtag.js) -->
+    <script id="gtagjs" async src="https://www.googletagmanager.com/gtag/js?id=UA-173950956-1"></script>
+    <script id="gtagjscode">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
+  `)
 
   const html = $.root().html();
 
