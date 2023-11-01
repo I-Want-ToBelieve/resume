@@ -18,8 +18,10 @@
             font-family: 'LXGWWenKaiLite-Regular';
           }
       </style>
-    
-        
+
+
+
+
 
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width initial-scale=1">
 
@@ -746,4 +748,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 
 
 
-</body></html>
+
+    <!-- Google tag (gtag.js) -->
+    <script id="gtagjs" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-173950956-1"></script>
+    <script id="gtagjscode">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
+  </body></html>
