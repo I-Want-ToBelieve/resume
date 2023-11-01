@@ -119,6 +119,7 @@
 [flutter]: https://github.com/flutter/flutter
 [uefi]: https://github.com/tianocore/edk2
 [grub]: https://github.com/rhboot/grub2
+[paru]: https://github.com/Morganamilo/paru
 
 此简历在线 web 版本: https://iwantobelieve.netlify.app
 
@@ -145,7 +146,7 @@
 - 脚手架: [create-react-app][] & [vue-cli][]
 - 跨平台桌面应用框架: [electron][]
 - 打包工具: [webpack][] & [rollup][] & [vite][]
-- 编译器:[babel][] ＆　[esbuild][] ＆ [swc][]
+- 编译器:[babel][] ＆ [esbuild][] ＆ [swc][]
 - 单元测试: [jest][] & [react-hooks-testing-library][]
 - 编辑器: [vscode][] & [neovim][] & [android studio][]
 - 代码规范: [eslint][] & [stylelint][] & [prettier][] & [husky][] & [commitlint][] & [lint-staged][]
@@ -159,8 +160,8 @@
 以下为我了解的技术栈
 
 - 系统级开发: [rust][]
-- 微前端: [qiankun][] & [emp][]
-- 小程序开发框架: [taro][] & [tauri][]
+- 微前端: [qiankun][]
+- 小程序开发框架: [taro][]
 - 跨平台桌面应用框架: [react.node-gui][] & [tauri][]
 - webassembly: [wasm-pack][]
 - 原生移动端: [java][]
