@@ -18,6 +18,8 @@
             font-family: 'LXGWWenKaiLite-Regular';
           }
       </style>
+    
+        
 
 
 
@@ -750,12 +752,17 @@ mark .md-meta { color: rgb(0, 0, 0); }
 
 
     <!-- Google tag (gtag.js) -->
+    
+    
+  
+
+    <!-- Google tag (gtag.js) -->
     <script id="gtagjs" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-173950956-1"></script>
     <script id="gtagjscode">
       window.dataLayer = window.dataLayer || [];
       function gtag(){window.dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'GA_TRACKING_ID');
+      gtag('config', 'UA-173950956-1');
     </script>
   </body></html>

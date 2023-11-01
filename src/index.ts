@@ -47,13 +47,13 @@ try {
 
   $('body').append(`
     <!-- Google tag (gtag.js) -->
-    <script id="gtagjs" async src="https://www.googletagmanager.com/gtag/js?id=UA-173950956-1"></script>
+    <script id="gtagjs" async src="https://www.googletagmanager.com/gtag/js?id=G-71VBYK4EQG"></script>
     <script id="gtagjscode">
       window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-173950956-1');
+      gtag('config', 'G-71VBYK4EQG');
     </script>
   `)
 
