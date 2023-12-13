@@ -120,6 +120,10 @@
 [uefi]: https://github.com/tianocore/edk2
 [grub]: https://github.com/rhboot/grub2
 [paru]: https://github.com/Morganamilo/paru
+[yakite]: https://github.com/I-Want-ToBelieve/yakite
+[yabai]: https://github.com/koekeishiya/yabai
+[krohnkite]: https://github.com/esjeon/krohnkite
+[objective-c]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 
 此简历在线 web 版本: https://iwantobelieve.netlify.app
 
@@ -131,9 +135,11 @@
 - github: https://github.com/i-want-tobelieve
 - 阅读书签: https://www.gettoby.com/p/0qhnlxhp4lfh
 - 工作经验: 四年
-- 期望职位: 前端组长/前端高级工程师
+- 期望职位: 前端组长/前端高级开发工程师/初级后端开发工程师
+- 职业规划: 架构/全栈
 - 期望城市: 深圳/广州
 - 期望薪资: 面谈
+
 
 
 # 技术栈
@@ -160,21 +166,19 @@
 以下为我了解的技术栈
 
 - 系统级开发: [rust][]
-- 微前端: [qiankun][]
 - 小程序开发框架: [taro][]
-- 跨平台桌面应用框架: [react.node-gui][] & [tauri][]
+- 跨平台桌面应用框架: [tauri][]
 - webassembly: [wasm-pack][]
-- 原生移动端: [java][]
 
 更多可能(我对我的技术栈没有限制，因为看完文档都能写的很好)
 
 # 个人优势
 
-自学前端并积累了整套前端自学资源, 会基础的后端开发。五年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建, 可以配置各种脚手架提高组员开发效率和开发体验,日常使用 [linux][] 发行版声明式系统 [nixos][] 进行开发, 并业余从事 [nixos][] 开源社区的建设, 熟悉函数式编程理念，写得一手同事都夸赞的干净代码。
+自学前端并积累了整套前端自学资源, 会基础的后端开发。七年编码经验, 四年开发经验，涉猎广泛，熟悉前端框架选型，脚手架搭建，自动化测试，持续集成持续部署，[gitlab][] 私服搭建, 可以配置各种脚手架提高组员开发效率和开发体验,日常使用 [linux][] 发行版声明式系统 [nixos][] 进行开发, 并业余从事 [nixos][] 开源社区的建设, 熟悉函数式编程理念，写得一手同事都夸赞的干净代码。
 
 # 联系方式
 
-- 手机: 13606640872
+- 手机: 18127949242
 - 邮箱: floatshuyin@gmail.com
 
 # 工作经历
@@ -332,6 +336,12 @@
 
 想象一下,一个通过 [uefi][] 和 [grub][] 引导的运行在 [linux][] 内核上的现代操作系统的构成部分，从黑色背景的 [tty][],到登录管理器然后是桌面环境，桌面环境的 [shells][]，[trays][]，[docks][]，[themes][]，[widgets][], [ime][] 以及日常开发使用的所有软件开发工具以及它们的配置项都以声明式的文本代码形式编写并组织在一个 [git][] 仓库中, 它们大多是 [foss][] 的, 并且拥有与你的 [cpu arch][] 兼容的二进制源, 其余的则从各种 [git][] 源拉取源代码, 你只需要输入一行命令，从代码中声明的一切，下到磁盘分区，上到桌面主题，它们由各式各样的编程语言编写，使用各式各样的编译器，在此刻都编译并构建为你自己声明的操作系统.
 
+#### yakite
+
+[yakite][] 是 [macos][] 上的一款动态的平铺窗户管理器，弥合了 [yabai][] 和 [krohnkite][] 之间的差距.
+
+该项目由于 [krohnkite][] 为 [typescript][] 编写， 因此我采用了 [node][] 作为守护程序, 命令行程序则采用了 [rust][], 并且由于需要在窗口布局切换时显示消息窗口, 我采用了 [objective-c][].
+
 #### localsend
 
 [localsend][] 是使用 flutter 框架编写 airdrop 的开源跨平台替代品, 可以运行在 android ios mac windows linux 多个平台上，以在局域网中互传文件.
@@ -424,4 +434,3 @@ message pack 的获取通过编写一个 [archlinux][] 的 dockerfile ，git clo
 [tdrop]: https://github.com/noctuid/tdrop
 [unix]: https://en.wikipedia.org/wiki/Unix
 [tty]: https://en.wikipedia.org/wiki/Tty_(Unix)
-[windows 11]:
